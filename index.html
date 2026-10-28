@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hajar Ragab — Graphic Designer & Art Director</title>
+<meta name="description" content="Hajar Ragab, graphic designer and art director. Brand identities delivered complete, with guidelines and file packs, plus social media for brands in Egypt and the Arab world.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@400;700&family=Comfortaa:wght@300;400;700&family=Space+Mono&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0010;--panel:#140020;--plum:#3b0f6e;--violet:#7c3aed;--glow:#9d4edd;
+  --orange:#f97316;--gold:#fbbf24;--text:#f5f0ff;--muted:#b49dc8;--line:rgba(157,78,221,.18);
+  --gutter:clamp(16px,5vw,64px);
+  --bebas:'Bebas Neue',sans-serif;--body:'Tajawal',sans-serif;--mono:'Space Mono',monospace;
+  --ease:cubic-bezier(.2,.8,.2,1);--ease-io:cubic-bezier(.77,0,.18,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--ink);color:var(--text);font:400 16px/1.7 var(--body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden}
+img{max-width:100%}
+ul,ol{list-style:none}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:inherit}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1320px;margin-inline:auto;padding-inline:var(--gutter)}
+.sec{padding-block:clamp(72px,10vw,128px)}
+
+#cur,#cur-r{display:none}
+@media (pointer:fine){
+  body.has-cur,body.has-cur a,body.has-cur button{cursor:none}
+  #cur{display:block;width:10px;height:10px;background:var(--orange);border-radius:50%;position:fixed;left:-20px;top:-20px;pointer-events:none;z-index:10001;transform:translate(-50%,-50%);mix-blend-mode:difference}
+  #cur-r{display:block;width:34px;height:34px;border:1.5px solid var(--glow);border-radius:50%;position:fixed;left:-40px;top:-40px;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);transition:transform .25s ease,border-color .25s}
+}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:500;height:68px;padding-inline:var(--gutter);display:flex;align-items:center;gap:2rem;background:rgba(10,0,16,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-logo{font:400 22px var(--bebas);letter-spacing:4px;text-decoration:none;margin-right:auto}
+.nav-logo span{color:var(--orange)}
+.nav-links{display:flex;gap:1.8rem}
+.nav-links a{font-size:14px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{font-size:14px;font-weight:700;text-decoration:none;color:#000;background:var(--orange);padding:9px 18px;border-radius:2px;transition:background .2s}
+.nav-cta:hover{background:var(--gold)}
+
+/* HERO */
+.hero-clip{overflow:hidden}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;padding:8rem var(--gutter) 4rem;gap:4rem;position:relative;max-width:1320px;margin-inline:auto}
+.hero-glow{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(124,58,237,.32) 0%,transparent 70%);top:-150px;right:-100px;pointer-events:none;animation:breathe 7s ease-in-out infinite alternate}
+.hero-glow2{position:absolute;width:350px;height:350px;background:radial-gradient(circle,rgba(249,115,22,.15) 0%,transparent 70%);bottom:0;left:5%;pointer-events:none;animation:breathe 9s ease-in-out infinite alternate-reverse}
+@keyframes breathe{from{opacity:.5;transform:scale(1)}to{opacity:1;transform:scale(1.08)}}
+.hero-copy{position:relative;z-index:2}
+.htag{display:inline-flex;align-items:center;gap:8px;background:rgba(124,58,237,.18);border:1px solid rgba(157,78,221,.35);color:#c9a6f0;font:400 11px var(--mono);letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:2px;margin-bottom:1.8rem;animation:fadeUp .8s ease both}
+.htag::before{content:'◈';color:var(--orange)}
+.hname{font:400 clamp(58px,8.4vw,124px)/.9 var(--bebas);animation:fadeUp .8s .12s ease both}
+.hname span{display:block}
+.hname .ghost{color:transparent;-webkit-text-stroke:1.5px rgba(245,240,255,.22)}
+.hname .acc{color:var(--orange)}
+.hsub{font-size:17px;color:var(--muted);line-height:1.8;margin:1.6rem 0 2.2rem;max-width:30em;animation:fadeUp .8s .25s ease both}
+.hsub strong{color:var(--gold);font-weight:700}
+.hstats{display:flex;gap:2.5rem;margin-bottom:2.5rem;animation:fadeUp .8s .38s ease both}
+.snum{font:400 46px/1 var(--bebas)}
+.snum span{color:var(--orange)}
+.slabel{font-size:13px;color:var(--muted);margin-top:4px}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap;animation:fadeUp .8s .5s ease both}
+.btn-o,.btn-g{padding:14px 30px;font:700 15px var(--body);border-radius:2px;text-decoration:none;display:inline-block;transition:transform .2s,background .2s,border-color .2s}
+.btn-o{background:var(--orange);color:#000}
+.btn-o:hover{background:var(--gold);transform:translateY(-3px)}
+.btn-g{color:#c9a6f0;border:1px solid rgba(157,78,221,.45)}
+.btn-g:hover{border-color:var(--glow);background:rgba(124,58,237,.15);transform:translateY(-3px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.hero-char{display:flex;align-items:center;justify-content:center}
+.char-wrap{width:400px;height:540px;position:relative}
+.char-ring{position:absolute;inset:-28px;border:1px solid rgba(157,78,221,.18);border-radius:50%;animation:spin 22s linear infinite}
+.char-ring::after{content:'';position:absolute;width:9px;height:9px;background:var(--orange);border-radius:50%;top:50%;left:-4.5px;transform:translateY(-50%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.char-card{width:100%;height:100%;background:linear-gradient(155deg,rgba(59,15,110,.6),rgba(10,0,16,.95));border:1px solid rgba(157,78,221,.28);border-radius:6px;overflow:hidden;position:relative}
+.char-inner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.char-bottom{position:absolute;inset:auto 0 0;background:linear-gradient(transparent,rgba(10,0,16,.97));padding:2.5rem 1.5rem 1.5rem;z-index:10}
+.char-tag{font:400 10px var(--mono);color:var(--orange);letter-spacing:2px;margin-bottom:5px;text-transform:uppercase}
+.char-title{font:400 26px var(--bebas);letter-spacing:2px}
+.badge-ai{position:absolute;top:18px;left:18px;background:rgba(249,115,22,.14);border:1px solid rgba(249,115,22,.45);color:var(--orange);font:400 9px var(--mono);padding:5px 11px;border-radius:2px;letter-spacing:2px;z-index:10}
+.float-anim{animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* CLIENT STRIP */
+.clients{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:clamp(16px,3vw,40px);background:#06000a;border-block:1px solid var(--line);padding-block:24px}
+.clients-label{padding-left:var(--gutter);font-size:14px;font-weight:700;line-height:1.35;color:var(--muted);max-width:calc(var(--gutter) + 6.5em)}
+.clients-viewport{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.clients-track{display:flex;align-items:center;width:max-content;animation:clients 60s linear infinite}
+.clients-viewport:hover .clients-track{animation-play-state:paused}
+.client{flex:none;height:72px;padding-inline:clamp(24px,3vw,44px);display:flex;align-items:center;opacity:.72;transition:opacity .25s}
+.client:hover{opacity:1}
+.client img{display:block;width:auto;max-width:none}
+@keyframes clients{to{transform:translateX(-50%)}}
+
+/* HEADINGS */
+.stag{font:400 11px var(--mono);color:var(--orange);letter-spacing:3px;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:12px}
+.stag::after{content:'';width:50px;height:1px;background:var(--orange);opacity:.5}
+.stitle{font:400 clamp(44px,6.4vw,92px)/.92 var(--bebas)}
+.lede{font-size:17px;color:var(--muted);max-width:30em;line-height:1.75}
+.sec-head{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+
+/* ---------------- BRAND CARDS */
+.bgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,24px)}
+.bcard{position:relative;aspect-ratio:4/5}
+.bcard-feature{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.bcard-btn{position:absolute;inset:0;display:block;width:100%;border-radius:18px;isolation:isolate}
+.bcard-sheets,.bcard-sheets::before{position:absolute;inset:0;border-radius:18px;z-index:-1;transition:transform .45s var(--ease)}
+.bcard-sheets{background:var(--b-acc);opacity:.9;transform:rotate(0)}
+.bcard-sheets::before{content:'';background:color-mix(in srgb,var(--b-bg) 70%,#fff 30%)}
+.bcard-btn:hover .bcard-sheets,.bcard-btn:focus-visible .bcard-sheets{transform:translate(10px,-8px) rotate(2.5deg)}
+.bcard-btn:hover .bcard-sheets::before,.bcard-btn:focus-visible .bcard-sheets::before{transform:translate(-14px,4px) rotate(-5deg)}
+.bcard-media{position:absolute;inset:0;border-radius:18px;overflow:hidden;background:var(--b-bg);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.bcard-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
+.bcard-btn:hover .bcard-media img{transform:scale(1.06)}
+.bcard-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,color-mix(in srgb,var(--b-bg) 55%,transparent) 62%,var(--b-bg) 96%)}
+.bcard-body{position:absolute;inset:auto 0 0;padding:clamp(18px,2.2vw,30px);display:flex;flex-direction:column;align-items:flex-start;gap:6px;z-index:2}
+.bcard-logo{height:clamp(28px,3vw,40px);width:auto;max-width:70%;object-fit:contain;object-position:left;margin-bottom:8px}
+.bcard-feature .bcard-logo{height:clamp(40px,4.4vw,64px)}
+.bcard-name{font:400 clamp(26px,2.4vw,36px)/1 var(--bebas);letter-spacing:1px;color:#fff}
+.bcard-feature .bcard-name{font-size:clamp(34px,3.6vw,54px)}
+.bcard-name span{font-family:var(--body);font-weight:700;font-size:.62em;color:var(--b-acc);margin-left:6px}
+.bcard-ind{font-size:14px;color:rgba(255,255,255,.78)}
+.bcard-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bcard-chips li{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(4px)}
+.bcard-open{position:absolute;right:clamp(18px,2.2vw,30px);bottom:clamp(18px,2.2vw,30px);font-size:13px;font-weight:700;color:#000;background:var(--b-acc);padding:9px 16px;border-radius:999px;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s var(--ease)}
+.bcard-btn:hover .bcard-open,.bcard-btn:focus-visible .bcard-open{opacity:1;transform:none}
+
+/* ---------------- HANDOVER */
+.handover{background:linear-gradient(180deg,#0f0016,#1a0626 40%,#0f0016);border-block:1px solid var(--line)}
+.ho-head{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(28px,3vw,44px)}
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.shelf-book{width:100%;display:grid;grid-template-columns:88px 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:8px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03);transition:background .25s,border-color .25s,transform .25s var(--ease)}
+.shelf-book img{grid-row:span 2;width:88px;height:auto;border-radius:6px;display:block;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.shelf-name{font-weight:700;font-size:15px;line-height:1.2}
+.shelf-pages{font-size:13px;color:var(--muted)}
+.shelf-book:hover{border-color:rgba(249,115,22,.45);transform:translateY(-2px)}
+.shelf-book[aria-pressed="true"]{background:var(--bk);border-color:transparent}
+.shelf-book[aria-pressed="true"] .shelf-pages{color:rgba(255,255,255,.8)}
+
+/* book viewer (shared) */
+.book{--bk-acc:var(--orange);background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:clamp(12px,1.8vw,22px)}
+.chapters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chap{white-space:nowrap;font:700 13px var(--body);padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.22);transition:background .2s,border-color .2s,color .2s}
+.chap:hover{border-color:currentColor}
+.chap[aria-current="true"]{background:var(--bk-acc);border-color:var(--bk-acc);color:#fff}
+.book-stage{position:relative;border-radius:14px;overflow:hidden;background:#111;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.book-zoom{display:block;width:100%;padding:0;line-height:0}
+.book-zoom img{display:block;width:100%;height:auto;aspect-ratio:16/9;transition:opacity .18s}
+.book-zoom img.loading{opacity:.35}
+.book-nav{position:absolute;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:rgba(10,0,16,.72);display:grid;place-items:center;transition:background .2s,opacity .2s}
+.book-nav:hover{background:var(--bk-acc)}
+.book-nav svg,.lb-nav svg,.lb-close svg,.x-btn svg,.cs-arrow svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.book-nav{color:#fff}
+.book-prev{left:12px}.book-next{right:12px}
+.book-nav:disabled{opacity:0;pointer-events:none}
+.book-bar{display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:14px;padding:12px 4px 10px}
+.book-count{color:var(--bk-acc)}
+.thumbs{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent}
+.thumbs li{flex:none;scroll-snap-align:start}
+.thumb{display:block;width:140px;border-radius:8px;overflow:hidden;line-height:0;border:2px solid transparent;opacity:.55;transition:opacity .2s,border-color .2s}
+.thumb img{width:100%;height:auto;display:block}
+.thumb:hover{opacity:1}
+.thumb[aria-current="true"]{border-color:var(--bk-acc);opacity:1}
+
+.ho-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(16px,2vw,24px);margin-top:clamp(16px,2vw,24px);align-items:start}
+.pack{background:#FAF9F6;color:#183B63;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.3);font-family:'Comfortaa',sans-serif}
+.pack-bar{display:flex;align-items:center;gap:14px;padding:14px 18px;background:#ECE8DF;border-bottom:1px solid rgba(24,59,99,.14);font-size:13px;font-weight:700}
+.pack-dots{display:flex;gap:6px}.pack-dots i{width:11px;height:11px;border-radius:50%;background:#d5cfc3}
+.pack-dots i:first-child{background:#F27422}
+.pack-count{margin-left:auto;font-weight:400;color:#55657A}
+.pack-body{display:grid;grid-template-columns:150px 1fr;min-height:420px}
+.pack-side{border-right:1px solid rgba(24,59,99,.14);padding:12px 8px;display:flex;flex-direction:column;gap:4px;background:#F3F0E8}
+.pk-tab{display:flex;gap:8px;justify-content:space-between;align-items:center;white-space:nowrap;font:700 13px 'Comfortaa',sans-serif;padding:10px 12px;border-radius:10px;color:#183B63}
+.pk-tab::before{content:'';width:16px;height:12px;border-radius:2px 2px 3px 3px;background:#E3B98F;flex:none}
+.pk-tab[id="tb-readme"]::before{width:11px;height:14px;background:#cfd6df;border-radius:2px}
+.pk-tab span{margin-left:auto;font-weight:400;color:#55657A;font-size:12px}
+.pk-tab:hover{background:rgba(24,59,99,.06)}
+.pk-tab[aria-selected="true"]{background:#183B63;color:#F8F5EF}
+.pk-tab[aria-selected="true"] span{color:#E9EA86}
+.pack-main{padding:16px;min-width:0}
+.pk-note{font-size:13px;color:#55657A;margin-bottom:12px}
+.files{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px 12px}
+.file-prev{aspect-ratio:4/3;border-radius:10px;display:grid;place-items:center;border:1px solid rgba(24,59,99,.14)}
+.file-prev img{width:72%;height:62%;object-fit:contain}
+.file-prev.is-app img{width:56%;height:70%}
+.file-name{display:flex;gap:6px;align-items:baseline;font:400 10px/1.4 var(--mono);padding-top:7px;overflow-wrap:anywhere}
+.ext{flex:none;font:700 9px 'Comfortaa',sans-serif;padding:2px 5px;border-radius:4px;color:#fff;background:#183B63}
+.ext-pdf{background:#c8442d}.ext-ttf{background:#F27422}.ext-txt{background:#7b8796}
+.fonts li{display:flex;flex-direction:column;gap:6px;padding:16px 4px;border-bottom:1px solid rgba(24,59,99,.14)}
+.fs{font-size:clamp(20px,2.2vw,28px);line-height:1.25}
+.fs-small{font-size:16px}
+.readme{font:400 12.5px/1.7 var(--mono);white-space:pre-wrap;background:#F3F0E8;border-radius:12px;padding:18px}
+.ships{background:var(--orange);color:#120018;border-radius:20px;padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column;gap:18px}
+.ships h3{font:400 clamp(30px,2.8vw,40px)/1 var(--bebas);letter-spacing:.5px}
+.ships ul{display:flex;flex-direction:column;gap:14px}
+.ships li{display:grid;grid-template-columns:22px 1fr;column-gap:10px;font-size:14px;line-height:1.55}
+.ships li::before{content:'';grid-row:span 2;width:14px;height:14px;margin-top:4px;border-radius:50%;border:3px solid #120018;background:#fff}
+.ships li b{font-weight:900;font-size:15.5px}
+.ships-cta{margin-top:auto;align-self:flex-start;background:#120018;color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:14px 22px;border-radius:999px;transition:background .2s}
+.ships-cta:hover{background:var(--plum)}
+
+/* ---------------- DECKS */
+.social{background:#07000c}
+.decks{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.2vw,32px) clamp(14px,1.8vw,24px)}
+.deck{display:flex}
+.deck-btn{height:100%;display:flex;flex-direction:column;gap:18px;width:100%;padding:18px 16px 16px;border-radius:18px;background:var(--panel);border:1px solid var(--line);transition:border-color .3s,background .3s}
+.deck-btn:hover,.deck-btn:focus-visible{border-color:rgba(249,115,22,.5);background:#1a0029}
+.dk-stack{position:relative;display:block;aspect-ratio:4/4.3;margin:8px 10% 0}
+.dk-card{position:absolute;inset:6% 10%;border-radius:10px;overflow:hidden;background:#222;box-shadow:0 14px 30px rgba(0,0,0,.5);transition:transform .5s var(--ease)}
+.dk-card img{width:100%;height:100%;object-fit:cover;display:block}
+.dk-c0{transform:rotate(-8deg) translateX(-8%)}
+.dk-c1{transform:rotate(6deg) translateX(8%)}
+.dk-c2{transform:rotate(0)}
+.deck-btn:hover .dk-c0,.deck-btn:focus-visible .dk-c0{transform:rotate(-15deg) translate(-24%,4%)}
+.deck-btn:hover .dk-c1,.deck-btn:focus-visible .dk-c1{transform:rotate(13deg) translate(24%,4%)}
+.deck-btn:hover .dk-c2,.deck-btn:focus-visible .dk-c2{transform:translateY(-6%) scale(1.04)}
+.dk-info{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;min-width:0}
+.dk-logo{grid-row:span 2;width:46px;height:46px;object-fit:contain;padding:6px;border-radius:12px;background:rgba(255,255,255,.07)}
+.dk-name{font-weight:700;font-size:16px;line-height:1.25}
+.dk-meta{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;line-height:1.35}
+.dk-count{color:var(--orange);font-weight:700}
+.deck-cta{display:flex}
+.deck-cta a{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:28px 24px;border-radius:18px;border:1.5px dashed rgba(249,115,22,.55);text-decoration:none;transition:background .3s,border-color .3s}
+.deck-cta a:hover{background:rgba(249,115,22,.08);border-color:var(--orange)}
+.deck-cta b{font:400 clamp(30px,2.6vw,40px)/1 var(--bebas);letter-spacing:.5px}
+.deck-cta span{font-size:14px;color:var(--muted)}
+.deck-cta i{font-style:normal;font-weight:700;font-size:14px;color:#000;background:var(--orange);padding:9px 16px;border-radius:999px;margin-top:6px}
+
+/* ---------------- CASE SHEET */
+.case{position:fixed;inset:0;z-index:2000;background:var(--c-bg);color:var(--c-ink);font-family:var(--c-font)}
+.case[hidden]{display:none}
+.case-scroll{position:absolute;inset:0;overflow-y:auto;overscroll-behavior:contain}
+.cs-bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;padding:12px var(--gutter);background:color-mix(in srgb,var(--c-hero) 92%,transparent);backdrop-filter:blur(10px);color:var(--c-heroInk)}
+.cs-bar img{height:26px;width:auto;max-width:150px;object-fit:contain;margin-right:auto}
+.cs-bar-count{font-size:13px;font-weight:700;opacity:.8;font-family:var(--body)}
+.x-btn,.cs-arrow{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:inherit;transition:background .2s,color .2s}
+.x-btn:hover,.cs-arrow:hover{background:var(--c-acc);color:#fff}
+.cs-hero{background:var(--c-hero);color:var(--c-heroInk);padding:clamp(56px,9vw,120px) var(--gutter) clamp(48px,7vw,96px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.cs-logo{width:auto;height:clamp(90px,14vw,190px);max-width:min(84vw,720px);object-fit:contain}
+.cs-title{font:700 clamp(15px,1.4vw,18px) var(--body);letter-spacing:.5px;opacity:.85}
+.cs-tagline{font-size:clamp(22px,2.6vw,36px);line-height:1.3;max-width:24em}
+.cs-tagline-en{font-size:15px;opacity:.75;margin-top:-10px}
+.cs-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 36px;margin-top:10px;font-family:var(--body)}
+.cs-meta div{max-width:28em}
+.cs-meta dt{font-size:12px;font-weight:700;opacity:.62;margin-bottom:2px}
+.cs-meta dd{font-size:14.5px;line-height:1.5}
+.cs-body{max-width:1240px;margin-inline:auto;padding:0 var(--gutter) clamp(56px,7vw,96px)}
+.cs-sec{padding-top:clamp(48px,6vw,88px)}
+.cs-h{font-size:clamp(24px,2.4vw,34px);font-weight:700;line-height:1.2;margin-bottom:22px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.cs-h small{font-size:14px;font-weight:700;color:var(--c-acc);font-family:var(--body)}
+.cs-cover{margin-top:calc(-1 * clamp(24px,4vw,56px));position:relative;z-index:2}
+.cs-cover .zoom{border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.28);display:flex;justify-content:center}
+.cs-cover .zoom img{width:auto;max-width:100%;max-height:min(78vh,760px)}
+.cs-story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px)}
+.cs-story h3{font-size:13px;font-weight:700;color:var(--c-acc);margin-bottom:12px;font-family:var(--body)}
+.cs-story p{font-size:clamp(16px,1.3vw,18px);line-height:1.75;color:var(--c-muted);max-width:34em;font-family:var(--body)}
+.cs-story .cs-idea{font-size:clamp(20px,1.9vw,26px);line-height:1.45;color:var(--c-ink);font-family:var(--c-font)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:st}
+.step{counter-increment:st;display:flex;flex-direction:column;gap:12px;background:var(--c-surf);border-radius:16px;padding:12px 12px 16px;border:1px solid color-mix(in srgb,var(--c-ink) 12%,transparent)}
+.step .zoom{border-radius:10px;aspect-ratio:16/9;background:color-mix(in srgb,var(--c-ink) 6%,var(--c-bg))}
+.step .zoom img{height:100%;object-fit:cover}
+.step-t{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;line-height:1.25}
+.step-t::before{content:counter(st);flex:none;width:26px;height:26px;border-radius:50%;background:var(--c-acc);color:#fff;font:700 13px var(--body);display:grid;place-items:center}
+.step-d{font-size:13.5px;line-height:1.55;color:var(--c-muted);font-family:var(--body)}
+.idgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.idcell{background:var(--c-surf);border-radius:18px;padding:clamp(18px,2vw,28px);border:1px solid color-mix(in srgb,var(--c-ink) 12%,transparent);grid-column:span 12}
+.idcell h4{font-size:13px;font-weight:700;color:var(--c-acc);margin-bottom:16px;font-family:var(--body)}
+.vers{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.vers li{border-radius:14px;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:18px;border:1px solid color-mix(in srgb,var(--c-ink) 10%,transparent)}
+.vers img{max-width:78%;max-height:58%;object-fit:contain}
+.vers span{font:700 12px var(--body)}
+.sws{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.sw{border-radius:14px;padding:16px;min-height:170px;display:flex;flex-direction:column;gap:4px;border:1px solid color-mix(in srgb,var(--c-ink) 10%,transparent);font-family:var(--body)}
+.sw-n{font-weight:700;font-size:16px}
+.sw dl{margin-top:auto;display:grid;gap:2px;font-size:12px}
+.sw dl div{display:flex;gap:8px}.sw dt{font-weight:700;min-width:40px}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.type{display:flex;gap:18px;align-items:center}
+.type-aa{font-size:clamp(64px,7vw,96px);line-height:.9;color:var(--c-acc);font-weight:700;flex:none}
+.type-n{font-weight:700;font-size:18px}
+.type-d{font-size:14px;line-height:1.55;color:var(--c-muted);font-family:var(--body)}
+.voice{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;align-items:end}
+.voice p{font-family:var(--body)}
+.voice-no{opacity:.6;font-size:15px}.voice-no s{text-decoration-thickness:1px}
+.voice-yes{font-size:clamp(19px,1.8vw,24px);font-weight:700;color:var(--c-ink);font-family:var(--c-font)!important}
+.voice span{display:block;font-size:12px;font-weight:700;color:var(--c-acc);margin-bottom:4px}
+.cs-book .book{--bk-acc:var(--c-acc);background:color-mix(in srgb,var(--c-ink) 6%,var(--c-bg));border-color:color-mix(in srgb,var(--c-ink) 12%,transparent);color:var(--c-ink)}
+.cs-book .chap{border-color:color-mix(in srgb,var(--c-ink) 25%,transparent)}
+.cs-book .thumbs{scrollbar-color:color-mix(in srgb,var(--c-ink) 30%,transparent) transparent}
+.gal{columns:3 280px;column-gap:14px}
+.gal.few{columns:2 280px}
+.gal .shot{break-inside:avoid;margin-bottom:14px}
+.gal .zoom,.cs-cover .zoom{background:color-mix(in srgb,var(--c-ink) 8%,var(--c-bg))}
+.gal .zoom{border-radius:14px}
+.case .shot figcaption{font-size:13px;color:var(--c-muted);padding-top:8px;font-family:var(--body)}
+.cs-next{margin-top:clamp(48px,6vw,88px);display:flex;justify-content:center}
+.cs-next button{display:flex;align-items:center;gap:18px;padding:16px 18px 16px 28px;border-radius:999px;background:var(--c-hero);color:var(--c-heroInk);font-weight:700;font-size:17px;transition:transform .3s var(--ease)}
+.cs-next button:hover{transform:translateY(-3px)}
+.cs-next img{height:28px;width:auto;max-width:140px;object-fit:contain}
+.cs-next b{font-weight:700}
+.cs-next i{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--c-acc);color:#fff;display:grid;place-items:center}
+.case-in{animation:caseIn .6s .18s var(--ease) both}
+@keyframes caseIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/* ---------------- DECK SHEET */
+.dsheet{position:fixed;inset:0;z-index:2000;background:#07000c}
+.dsheet[hidden]{display:none}
+.ds-scroll{position:absolute;inset:0;overflow-y:auto;overscroll-behavior:contain}
+.ds-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;padding:14px var(--gutter);background:rgba(7,0,12,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.ds-head img{width:46px;height:46px;object-fit:contain;padding:6px;border-radius:12px;background:rgba(255,255,255,.07)}
+.ds-title{font:400 clamp(26px,2.6vw,36px)/1 var(--bebas);letter-spacing:1px}
+.ds-sub{font-size:13px;color:var(--muted)}
+.ds-head .x-btn{margin-left:auto;color:var(--text)}
+.ds-nav{display:flex;gap:8px}
+.ds-body{max-width:1320px;margin-inline:auto;padding:clamp(20px,3vw,36px) var(--gutter) 80px}
+.ds-desc{font-size:16px;color:var(--muted);max-width:40em;margin-bottom:24px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.2vw,16px);align-items:start}
+.pgrid .shot.wide{grid-column:1/-1}
+.pgrid .shot.screen{grid-column:span 1}
+.pgrid .shot.span2{grid-column:span 2}
+.post .zoom{border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.dsheet .shot figcaption{font-size:13px;color:var(--muted);padding-top:8px}
+.post{will-change:transform}
+.screen .zoom{border-radius:28px;border:6px solid #1d1d22;background:#000}
+.ds-sec-t{grid-column:1/-1;font-weight:700;font-size:14px;color:var(--orange);margin-top:14px}
+
+/* SHOT */
+.shot{margin:0;min-width:0}
+.zoom{display:block;width:100%;padding:0;position:relative;overflow:hidden;background:#000;line-height:0}
+.zoom img{display:block;width:100%;height:auto;transition:transform .5s ease}
+.zoom::after{content:'';position:absolute;right:10px;bottom:10px;width:32px;height:32px;border-radius:50%;background:rgba(10,0,16,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7'/%3E%3C/svg%3E") center/15px no-repeat;opacity:0;transform:scale(.8);transition:opacity .25s,transform .25s}
+.zoom:hover img{transform:scale(1.03)}
+.zoom:hover::after,.zoom:focus-visible::after{opacity:1;transform:none}
+.shot figcaption{font-size:13px;color:var(--muted);padding-top:10px;line-height:1.45}
+
+/* ABOUT / SKILLS / CONTACT */
+.about{border-top:1px solid var(--line)}
+.about .stitle,.skills .stitle{margin-bottom:2rem}
+.about-2col{display:grid;grid-template-columns:1fr 1.3fr;gap:3px;margin-bottom:3px}
+.about-char-panel{background:rgba(59,15,110,.18);border:1px solid rgba(157,78,221,.13);display:flex;align-items:center;justify-content:center;padding:2rem;min-height:340px}
+.about-content-panel{background:var(--panel);border:1px solid var(--line);padding:clamp(24px,3.5vw,48px);display:flex;flex-direction:column;justify-content:center;gap:1.2rem}
+.about-text{font-size:16.5px;color:var(--muted);line-height:1.85;max-width:36em}
+.about-text strong{color:var(--gold);font-weight:700}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.svc{background:var(--panel);border:1px solid var(--line);padding:clamp(20px,2.4vw,32px)}
+.svc:first-child{background:linear-gradient(140deg,rgba(249,115,22,.16),rgba(20,0,32,1) 60%);border-color:rgba(249,115,22,.35)}
+.svc-name{font-size:19px;font-weight:900;margin-bottom:.4rem}
+.svc-desc{font-size:14px;color:var(--muted);line-height:1.7}
+.skills{background:#0d0014;border-top:1px solid var(--line)}
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+.skills-char{display:flex;justify-content:center;margin-bottom:2rem}
+.ai-tools{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ai-tool{background:rgba(124,58,237,.1);border:1px solid rgba(157,78,221,.18);border-radius:2px;padding:1.1rem;display:flex;flex-direction:column;gap:2px}
+.ai-name{font-size:15px;font-weight:700}
+.ai-desc{font-size:13px;color:var(--muted)}
+.bars{display:flex;flex-direction:column;gap:22px}
+.bar-top{display:flex;justify-content:space-between;margin-bottom:8px}
+.bar-name{font-size:15px;font-weight:700}
+.bar-pct{font:400 12px var(--mono);color:var(--orange)}
+.bar-track{height:3px;background:rgba(157,78,221,.15)}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--glow),var(--orange))}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.contact-big{font:400 clamp(56px,7.4vw,108px)/.9 var(--bebas);text-transform:uppercase}
+.contact-big span{color:var(--orange);display:block}
+.contact-big .ghost{color:transparent;-webkit-text-stroke:1.5px rgba(245,240,255,.2)}
+.ci-list{display:flex;flex-direction:column}
+.ci{display:flex;flex-direction:column;gap:4px;padding-block:1.1rem;border-bottom:1px solid var(--line)}
+.ci:last-child{border-bottom:0}
+.ci-label{font-size:13px;font-weight:700;color:var(--orange)}
+.ci-val{font-size:17px;font-weight:700;text-decoration:none;word-break:break-word;transition:color .2s}
+a.ci-val:hover{color:var(--orange)}
+.ci-open{color:var(--orange)}
+.foot{background:#050008;padding:1.8rem var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid var(--line)}
+.flogo{font:400 22px var(--bebas);letter-spacing:3px}
+.flogo span{color:var(--orange)}
+.fcopy{font-size:13px;color:rgba(180,157,200,.6)}
+.fsocials{display:flex;gap:20px}
+.fsocials a{font-size:14px;color:var(--muted);text-decoration:none;transition:color .2s}
+.fsocials a:hover{color:var(--orange)}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:9000;background:rgba(5,0,8,.96);display:grid;grid-template-columns:72px 1fr 72px;align-items:center;padding:24px 8px}
+.lb[hidden]{display:none}
+.lb-fig{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0;height:100%;justify-content:center}
+.lb-fig img{max-width:100%;max-height:calc(100vh - 110px);width:auto;height:auto;object-fit:contain;display:block;box-shadow:0 20px 80px rgba(0,0,0,.6);touch-action:pan-y}
+.lb-fig figcaption{display:flex;gap:18px;font-size:15px;color:var(--text);font-family:var(--body)}
+#lbCount{color:var(--muted)}
+.lb-nav,.lb-close{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(124,58,237,.22);color:#fff;transition:background .2s;justify-self:center}
+.lb-nav:hover,.lb-close:hover{background:var(--orange)}
+.lb-close{position:absolute;top:16px;right:16px}
+.lb-nav[hidden]{visibility:hidden;display:grid}
+
+/* RESPONSIVE */
+@media (max-width:1100px){
+  .decks{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .ho-grid{grid-template-columns:1fr}
+  .shelf{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:7.5rem;gap:2rem}
+  .hero-char{display:none}
+  .clients{grid-template-columns:1fr;gap:10px}
+  .clients-label{max-width:none}
+  .sec-head,.ho-head{grid-template-columns:1fr}
+  .bgrid{grid-template-columns:1fr 1fr}
+  .bcard-feature{grid-row:auto;aspect-ratio:4/3.4}
+  .decks{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:repeat(2,1fr)}
+  .cs-story,.voice{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .about-2col{grid-template-columns:1fr}
+  .about-char-panel{display:none}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .skills-layout,.contact-layout{grid-template-columns:1fr}
+  .foot{flex-direction:column;text-align:center}
+  .lb{grid-template-columns:1fr;padding:64px 0 90px}
+  .lb-nav{position:absolute;bottom:20px}
+  .lb-prev{left:calc(50% - 70px)}.lb-next{right:calc(50% - 70px)}
+  .lb-fig img{max-height:calc(100vh - 200px)}
+  .lb-fig figcaption{padding-inline:16px;font-size:14px}
+  .cs-bar-count{display:none}
+}
+@media (max-width:560px){
+  .hstats{gap:1.6rem}
+  .snum{font-size:38px}
+  .hbtns{flex-direction:column}
+  .btn-o,.btn-g{text-align:center}
+  .nav-cta{padding:8px 14px;font-size:13px}
+  .bgrid{grid-template-columns:1fr}
+  .bcard-feature{grid-column:auto;aspect-ratio:4/5}
+  .bcard-open{opacity:1;transform:none;top:16px;bottom:auto;right:16px;padding:7px 13px;font-size:12px}
+  .decks{gap:12px}
+  .deck-btn{padding:12px 10px 12px;gap:12px}
+  .dk-info{grid-template-columns:1fr}
+  .dk-logo{grid-row:auto;width:36px;height:36px;margin-bottom:6px}
+  .dk-name{font-size:14px}
+  .shelf{grid-template-columns:1fr 1fr;gap:8px}
+  .shelf-book{grid-template-columns:1fr;row-gap:6px}
+  .shelf-book img{width:100%;grid-row:auto}
+  .book-nav{width:38px;height:38px}
+  .book-prev{left:6px}.book-next{right:6px}
+  .thumb{width:104px}
+  .chapters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+  .chap{flex:none}
+  .pack-body{grid-template-columns:1fr}
+  .pack-side{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid rgba(24,59,99,.14)}
+  .pk-tab{flex:none}
+  .files{grid-template-columns:repeat(3,1fr);gap:10px 8px}
+  .file-name{font-size:9px;flex-direction:column;gap:3px}
+  .svc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .gal{columns:2 140px;column-gap:10px}
+  .gal .shot{margin-bottom:10px}
+  .cs-bar{gap:10px}
+  .cs-arrow,.ds-nav{display:none}
+  .vers{grid-template-columns:1fr 1fr}
+  .vers li{padding:12px;gap:8px}
+  .ds-title{font-size:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .clients-track{flex-wrap:wrap;width:auto;justify-content:center}
+  .clients-track li[aria-hidden="true"]{display:none}
+}
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  padding: 90px 7.5%;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  background: #080612;
+  color: #f8f7ff;
+  font-family: inherit;
+}
+
+/* Background glows */
+
+.hero-glow,
+.hero-glow2 {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.hero-glow {
+  width: 400px;
+  height: 400px;
+  top: -220px;
+  left: -120px;
+  background: rgba(112, 0, 255, 0.4);
+}
+
+.hero-glow2 {
+  width: 350px;
+  height: 350px;
+  right: -180px;
+  bottom: -180px;
+  background: rgba(112, 0, 255, 0.35);
+}
+
+/* Left content */
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.htag {
+  margin: 0 0 20px;
+  color: #e6e0f6;
+  font-size: clamp(15px, 1.5vw, 24px);
+  letter-spacing: 0.5px;
+}
+
+.hname {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 14px;
+  margin: 0 0 28px;
+  font-size: clamp(42px, 5.2vw, 82px);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -3px;
+}
+
+.hname span {
+  display: inline-block;
+}
+
+.hname .ghost {
+  color: transparent;
+  -webkit-text-stroke: 1px #c9b6ff;
+}
+
+.hname .acc {
+  flex-basis: 100%;
+  width: fit-content;
+  background: linear-gradient(
+    100deg,
+    #ff791e 0%,
+    #f64f7b 45%,
+    #8b20ff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hsub {
+  max-width: 610px;
+  margin: 0 0 44px;
+  color: #d4d0e2;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.hsub strong {
+  color: #fff;
+  font-weight: 750;
+}
+
+/* Statistics */
+
+.hstats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 45px;
+}
+
+.stat-item {
+  min-width: 145px;
+  padding: 0 30px;
+  border-right: 1px solid rgba(183, 151, 255, 0.45);
+}
+
+.stat-item:first-child {
+  padding-left: 0;
+}
+
+.stat-item:last-child {
+  border-right: 0;
+}
+
+.snum {
+  margin-bottom: 4px;
+  font-size: clamp(35px, 3.5vw, 54px);
+  font-weight: 850;
+  line-height: 1.1;
+  background: linear-gradient(100deg, #8b24ff, #ff7043);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slabel {
+  color: #c7bdf4;
+  font-size: 15px;
+}
+
+/* Buttons */
+
+.hbtns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.hbtns a {
+  min-height: 58px;
+  padding: 0 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.hbtns a:hover {
+  transform: translateY(-4px);
+}
+
+.btn-o {
+  color: #ff986a;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(#080612, #080612) padding-box,
+    linear-gradient(100deg, #ff791e, #a020ff) border-box;
+}
+
+.btn-o:hover {
+  box-shadow: 0 0 28px rgba(160, 32, 255, 0.2);
+}
+
+.btn-g {
+  color: #fff;
+  background: linear-gradient(100deg, #761cff, #ad24e8, #ff7938);
+  box-shadow: 0 8px 30px rgba(130, 30, 255, 0.18);
+}
+
+.btn-g:hover {
+  box-shadow: 0 10px 35px rgba(130, 30, 255, 0.35);
+}
+
+/* =========================
+   RIGHT PORTRAIT
+========================= */
+
+.hero-char {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  justify-self: center;
+}
+
+.char-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Neon ring behind the image */
+
+.char-ring {
+  position: absolute;
+  width: 110%;
+  height: 43%;
+  top: 32%;
+  left: -5%;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background:
+    linear-gradient(#080612, #080612) padding-box,
+    linear-gradient(100deg, #ff7a24, #8520ff, #ff5d72) border-box;
+  transform: rotate(-12deg);
+  opacity: 0.95;
+  box-shadow:
+    0 0 18px rgba(137, 25, 255, 0.3),
+    0 0 45px rgba(137, 25, 255, 0.12);
+}
+
+/* Portrait card */
+
+.char-card {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 490px);
+  height: 560px;
+  padding: 0;
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  border-radius: 38px;
+  background:
+    linear-gradient(#10091e, #10091e) padding-box,
+    linear-gradient(
+      145deg,
+      #7e1cff,
+      #3d146b 45%,
+      #ff783b
+    ) border-box;
+  transform: rotate(4deg);
+  box-shadow:
+    0 25px 65px rgba(0, 0, 0, 0.4),
+    0 0 45px rgba(112, 20, 255, 0.15);
+}
+
+.char-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  background: radial-gradient(
+    ellipse at 50% 30%,
+    rgba(95, 35, 145, 0.25),
+    #10091e 75%
+  );
+}
+
+/* Show the entire image */
+
+.avatar-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center bottom;
+  animation: avatar-float 4s ease-in-out infinite;
+}
+
+/* Decorative sparkles */
+
+.hero-spark {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  font-size: 28px;
+}
+
+.spark-one {
+  top: 12%;
+  left: 2%;
+  color: #ff862f;
+}
+
+.spark-two {
+  top: 20%;
+  right: 0;
+  color: #8b20ff;
+  font-size: 23px;
+}
+
+.spark-three {
+  right: -5%;
+  bottom: 28%;
+  color: #8628ff;
+  font-size: 30px;
+}
+
+.hero-mini-badge {
+  position: absolute;
+  z-index: 4;
+  top: 8%;
+  right: 0;
+  width: 76px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ff7b36;
+  border-radius: 13px;
+  color: #ff8b39;
+  background: rgba(27, 12, 39, 0.95);
+  box-shadow: 0 0 18px rgba(255, 123, 54, 0.12);
+  transform: rotate(-5deg);
+}
+
+@keyframes avatar-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 25px;
+    padding: 80px 5%;
+  }
+
+  .hname {
+    letter-spacing: -2px;
+  }
+
+  .hsub {
+    font-size: 15px;
+  }
+
+  .stat-item {
+    min-width: auto;
+    padding: 0 18px;
+  }
+
+  .char-wrap {
+    min-height: 460px;
+  }
+
+  .char-card {
+    height: 440px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 22px 60px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: none;
+  }
+
+  .htag {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .hname {
+    gap: 4px 10px;
+    margin-bottom: 22px;
+    font-size: clamp(40px, 10vw, 65px);
+    letter-spacing: -2px;
+  }
+
+  .hsub {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .hstats {
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 0;
+    padding: 0 12px;
+  }
+
+  .stat-item:first-child {
+    padding-left: 0;
+  }
+
+  .snum {
+    font-size: clamp(30px, 8vw, 43px);
+  }
+
+  .slabel {
+    font-size: 12px;
+  }
+
+  .hbtns {
+    gap: 12px;
+  }
+
+  .hbtns a {
+    min-height: 52px;
+    padding: 0 18px;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .hero-char {
+    width: min(100%, 420px);
+  }
+
+  .char-wrap {
+    min-height: auto;
+    padding: 15px 8px 25px;
+  }
+
+  .char-card {
+    width: 88%;
+    height: auto;
+    aspect-ratio: 0.82;
+    border-radius: 28px;
+  }
+
+  .char-ring {
+    width: 110%;
+    height: 42%;
+    top: 30%;
+  }
+
+  .hero-mini-badge {
+    right: -1%;
+    top: 5%;
+    width: 60px;
+    height: 35px;
+  }
+
+  .spark-one {
+    left: 0;
+  }
+
+  .spark-three {
+    right: -1%;
+  }
+}
+
+/* Reduce motion for accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-image {
+    animation: none;
+  }
+
+  .hbtns a {
+    transition: none;
+  }
+}
+
+
+.about-char-panel {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 24px;
+  background: radial-gradient(
+    circle at center,
+    rgba(124, 58, 237, 0.18),
+    transparent 70%
+  );
+}
+
+.about-hajar-image {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: 420px;
+  object-fit: contain;
+  object-position: center;
+  animation: about-float 4s ease-in-out infinite;
+}
+
+@keyframes about-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-char-panel {
+    min-height: 280px;
+  }
+
+  .about-hajar-image {
+    max-width: 300px;
+    height: 340px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div id="cur" aria-hidden="true"></div><div id="cur-r" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="nav-logo" aria-label="Hajar Ragab, back to top">HAJAR<span>.</span></a>
+  <nav class="nav-links" aria-label="Sections"><a href="#branding">Branding</a><a href="#handover">Handover file</a><a href="#social">Social media</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="https://wa.me/201013929391" target="_blank" rel="noopener">Start a project</a>
+</header>
+
+<main id="top">
+<div class="hero-clip">
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <!-- Left content -->
+  <div class="hero-copy">
+    <p class="htag">Graphic Designer &amp; Art Director</p>
+
+    <h1 class="hname">
+      <span class="ghost">HAJAR</span>
+      <span>RAGAB</span>
+      <span class="acc">DESIGNS.</span>
+    </h1>
+
+    <p class="hsub">
+      <strong>5 years</strong> of branding and social media for brands
+      in Egypt and the Arab world. Every identity leaves with its
+      <strong>guidelines book and full file pack</strong>, ready for
+      the team to use.
+    </p>
+
+    <div class="hstats">
+      <div class="stat-item">
+        <div class="snum">5<span>+</span></div>
+        <div class="slabel">Years of work</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="snum">50<span>+</span></div>
+        <div class="slabel">Clients</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="snum">119<span>+</span></div>
+        <div class="slabel">Designs here</div>
+      </div>
+    </div>
+
+    <div class="hbtns">
+      <a href="#branding" class="btn-o">
+        See branding work <span>→</span>
+      </a>
+
+      <a href="#contact" class="btn-g">
+        Let's talk <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Right portrait -->
+  <div class="hero-char">
+    <div class="char-wrap">
+      <div class="char-ring"></div>
+
+      <div class="char-card">
+        <div class="char-inner">
+          <img
+            src="images/hajar-avatar.png"
+            alt="Hajar Ragab"
+            class="avatar-image"
+          />
+        </div>
+      </div>
+
+      <!-- Decorative elements -->
+      <span class="hero-spark spark-one">✦</span>
+      <span class="hero-spark spark-two">✦</span>
+      <span class="hero-spark spark-three">✦</span>
+
+      <div class="hero-mini-badge">✦</div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<section class="clients" aria-label="Brands I've worked with">
+  <p class="clients-label">Brands I've worked with</p>
+  <div class="clients-viewport"><ul class="clients-track"><li class="client"><img src="assets/logos/sravico_white.svg" alt="Sravico" style="height:31px" width="112" height="31"></li><li class="client"><img src="assets/logos/apex_white.png" alt="Apex Grooming" style="height:37px" width="91" height="37"></li><li class="client"><img src="assets/logos/eiffel_white.png" alt="Eiffel Medical Hospital" style="height:54px" width="54" height="54"></li><li class="client"><img src="assets/logos/numi_white.png" alt="NUMI" style="height:39px" width="85" height="39"></li><li class="client"><img src="assets/logos/savaur_white.png" alt="Savaur" style="height:54px" width="59" height="54"></li><li class="client"><img src="assets/logos/abaa_white.png" alt="Abaa" style="height:54px" width="19" height="54"></li><li class="client"><img src="assets/logos/patiolux_white.png" alt="Patiolux" style="height:36px" width="94" height="36"></li><li class="client"><img src="assets/logos/etamin_white.png" alt="Etamin" style="height:47px" width="74" height="47"></li><li class="client"><img src="assets/logos/nile_white.png" alt="Nile Trade" style="height:54px" width="63" height="54"></li><li class="client"><img src="assets/logos/shiny_white.png" alt="Shiny Smiles" style="height:54px" width="40" height="54"></li><li class="client"><img src="assets/logos/elvilla_white.png" alt="El Villa Dental Clinic" style="height:54px" width="55" height="54"></li><li class="client"><img src="assets/logos/hayat_white.png" alt="Hayat Dental Clinic" style="height:43px" width="78" height="43"></li><li class="client"><img src="assets/logos/lorino_white.png" alt="Lorino Medical Wear" style="height:32px" width="109" height="32"></li><li class="client"><img src="assets/logos/alhassan_white.png" alt="Al Hassan Auto" style="height:48px" width="72" height="48"></li><li class="client"><img src="assets/logos/mg_white.png" alt="MG Hotels &amp; Resorts" style="height:30px" width="112" height="30"></li><li class="client"><img src="assets/logos/n1fit_white.png" alt="n1Fit" style="height:33px" width="104" height="33"></li><li class="client"><img src="assets/logos/sravico_ecom_white.png" alt="Sravico E-commerce" style="height:54px" width="49" height="54"></li><li class="client"><img src="assets/logos/sham_white.png" alt="" style="height:54px" width="49" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/sravico_white.svg" alt="" style="height:31px" width="112" height="31"></li><li class="client" aria-hidden="true"><img src="assets/logos/apex_white.png" alt="" style="height:37px" width="91" height="37"></li><li class="client" aria-hidden="true"><img src="assets/logos/eiffel_white.png" alt="" style="height:54px" width="54" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/numi_white.png" alt="" style="height:39px" width="85" height="39"></li><li class="client" aria-hidden="true"><img src="assets/logos/savaur_white.png" alt="" style="height:54px" width="59" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/abaa_white.png" alt="" style="height:54px" width="19" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/patiolux_white.png" alt="" style="height:36px" width="94" height="36"></li><li class="client" aria-hidden="true"><img src="assets/logos/etamin_white.png" alt="" style="height:47px" width="74" height="47"></li><li class="client" aria-hidden="true"><img src="assets/logos/nile_white.png" alt="" style="height:54px" width="63" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/shiny_white.png" alt="" style="height:54px" width="40" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/elvilla_white.png" alt="" style="height:54px" width="55" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/hayat_white.png" alt="" style="height:43px" width="78" height="43"></li><li class="client" aria-hidden="true"><img src="assets/logos/lorino_white.png" alt="" style="height:32px" width="109" height="32"></li><li class="client" aria-hidden="true"><img src="assets/logos/alhassan_white.png" alt="" style="height:48px" width="72" height="48"></li><li class="client" aria-hidden="true"><img src="assets/logos/mg_white.png" alt="" style="height:30px" width="112" height="30"></li><li class="client" aria-hidden="true"><img src="assets/logos/n1fit_white.png" alt="" style="height:33px" width="104" height="33"></li><li class="client" aria-hidden="true"><img src="assets/logos/sravico_ecom_white.png" alt="" style="height:54px" width="49" height="54"></li><li class="client" aria-hidden="true"><img src="assets/logos/sham_white.png" alt="" style="height:54px" width="49" height="54"></li></ul></div>
+</section>
+
+<section id="branding" class="sec">
+  <div class="wrap">
+    <p class="stag">Branding</p>
+    <div class="sec-head">
+      <h2 class="stitle">Identities delivered<br>as a complete system.</h2>
+      <p class="lede">Open any brand to see the logo, the thinking behind it, the process step by step, the colours and type, and the files the client received.</p>
+    </div>
+    <ul class="bgrid"><li class="bcard bcard-feature" style="--b-bg:#183B63;--b-acc:#F27422"><button type="button" class="bcard-btn" data-case="0" aria-label="Open the Sravico case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/sravico/mockups/sravico_04_business_cards.jpg" width="1672" height="940" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><img class="bcard-logo" src="assets/brand/sravico/logos/Sravico_Logo_White.svg" alt=""><span class="bcard-name">Sravico</span><span class="bcard-ind">Travel and tourism, Egypt</span><ul class="bcard-chips"><li>50-page guidelines</li><li>Logo pack</li><li>12 mockups</li></ul><span class="bcard-open">Open case</span></span></button></li><li class="bcard" style="--b-bg:#0A0A0A;--b-acc:#C8A24B"><button type="button" class="bcard-btn" data-case="1" aria-label="Open the Apex Grooming case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/apex/img/action_1.jpg" width="1672" height="941" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><span class="bcard-name">Apex Grooming</span><span class="bcard-ind">Men&#x27;s grooming, Saudi Arabia</span><ul class="bcard-chips"><li>36-page guidelines</li><li>Strategy</li><li>Pattern</li></ul><span class="bcard-open">Open case</span></span></button></li><li class="bcard" style="--b-bg:#899676;--b-acc:#899676"><button type="button" class="bcard-btn" data-case="2" aria-label="Open the NUMI case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/numi/pages/p03.webp" width="2400" height="1350" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><span class="bcard-name">NUMI</span><span class="bcard-ind">Clean beauty skincare</span><ul class="bcard-chips"><li>Brand presentation</li><li>Packaging</li><li>Billboard</li></ul><span class="bcard-open">Open case</span></span></button></li><li class="bcard" style="--b-bg:#345525;--b-acc:#C04F1F"><button type="button" class="bcard-btn" data-case="3" aria-label="Open the Savaur case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/savaur/pages/p01.webp" width="2400" height="1350" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><img class="bcard-logo" src="assets/logos/savaur_white.png" alt=""><span class="bcard-name">Savaur</span><span class="bcard-ind">Healthy meals app, Sharjah</span><ul class="bcard-chips"><li>Brand presentation</li><li>App</li><li>Sketch to logo</li></ul><span class="bcard-open">Open case</span></span></button></li><li class="bcard" style="--b-bg:#502E3A;--b-acc:#B5875C"><button type="button" class="bcard-btn" data-case="4" aria-label="Open the Abaa case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/abaa/img/collage.webp" width="1080" height="1350" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><img class="bcard-logo" src="assets/logos/abaa_white.png" alt=""><span class="bcard-name">Abaa <span lang="ar">عباءة</span></span><span class="bcard-ind">Luxury abayas</span><ul class="bcard-chips"><li>Calligraphy logo</li><li>Packaging</li><li>Print</li></ul><span class="bcard-open">Open case</span></span></button></li><li class="bcard" style="--b-bg:#073543;--b-acc:#B18762"><button type="button" class="bcard-btn" data-case="5" aria-label="Open the Patiolux case study"><span class="bcard-sheets" aria-hidden="true"></span><span class="bcard-media"><img src="assets/brand/patiolux/img/poster.webp" width="1493" height="2000" alt="" loading="lazy" decoding="async"></span><span class="bcard-body"><span class="bcard-name">Patiolux</span><span class="bcard-ind">Premium outdoor furniture</span><ul class="bcard-chips"><li>Logo</li><li>Materials</li><li>Social</li></ul><span class="bcard-open">Open case</span></span></button></li></ul>
+  </div>
+</section>
+
+<section id="handover" class="handover sec">
+  <div class="wrap">
+    <div class="ho-head">
+      <div><p class="stag">The handover file</p><h2 class="stitle">What the client<br>takes home.</h2></div>
+      <p class="lede">Every identity ends with files the team can actually use: a guidelines book and a ready logo pack. Flip through four of them.</p>
+    </div>
+    <ul class="shelf" aria-label="Choose a guidelines book"><li><button type="button" class="shelf-book" data-book="0" aria-pressed="true" style="--bk:#183B63"><img src="assets/brand/sravico/pages/t/p01.webp" width="480" height="270" alt="" loading="lazy"><span class="shelf-name">Sravico</span><span class="shelf-pages">50 pages</span></button></li><li><button type="button" class="shelf-book" data-book="1" aria-pressed="false" style="--bk:#0A0A0A"><img src="assets/brand/apex/pages/t/p01.webp" width="480" height="270" alt="" loading="lazy"><span class="shelf-name">Apex Grooming</span><span class="shelf-pages">36 pages</span></button></li><li><button type="button" class="shelf-book" data-book="2" aria-pressed="false" style="--bk:#899676"><img src="assets/brand/numi/pages/t/p01.webp" width="480" height="270" alt="" loading="lazy"><span class="shelf-name">NUMI</span><span class="shelf-pages">11 pages</span></button></li><li><button type="button" class="shelf-book" data-book="3" aria-pressed="false" style="--bk:#345525"><img src="assets/brand/savaur/pages/t/p01.webp" width="480" height="270" alt="" loading="lazy"><span class="shelf-name">Savaur</span><span class="shelf-pages">14 pages</span></button></li></ul>
+    <div class="book" id="hoBook"></div>
+    <div class="ho-grid">
+      <div class="pack" aria-label="Sravico logo pack contents">
+        <div class="pack-bar"><span class="pack-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="pack-path">Sravico_Logo_Pack</span><span class="pack-count">25 files</span></div>
+        <div class="pack-body">
+          <div class="pack-side" role="tablist" aria-label="Folders">
+            <button role="tab" aria-selected="true" aria-controls="pk-svg" id="tb-svg" class="pk-tab">SVG <span>10</span></button>
+            <button role="tab" aria-selected="false" aria-controls="pk-pdf" id="tb-pdf" class="pk-tab" tabindex="-1">PDF <span>10</span></button>
+            <button role="tab" aria-selected="false" aria-controls="pk-font" id="tb-font" class="pk-tab" tabindex="-1">Font <span>4</span></button>
+            <button role="tab" aria-selected="false" aria-controls="pk-readme" id="tb-readme" class="pk-tab" tabindex="-1">README.txt</button>
+          </div>
+          <div class="pack-main">
+            <div role="tabpanel" id="pk-svg" aria-labelledby="tb-svg"><p class="pk-note">Vector files. Open and edit in Illustrator, scale to any size.</p><ul class="files"><li class="file"><div class="file-prev" style="background:#F8F5EF"><img src="assets/brand/sravico/logos/Sravico_Logo_FullColour.svg" alt="Full colour" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Logo_<wbr>FullColour.svg</span></div></li><li class="file"><div class="file-prev" style="background:#183B63"><img src="assets/brand/sravico/logos/Sravico_Logo_Reverse.svg" alt="Reverse" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Logo_<wbr>Reverse.svg</span></div></li><li class="file"><div class="file-prev" style="background:#F27422"><img src="assets/brand/sravico/logos/Sravico_Logo_White.svg" alt="White" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Logo_<wbr>White.svg</span></div></li><li class="file"><div class="file-prev" style="background:#FAF9F6"><img src="assets/brand/sravico/logos/Sravico_Logo_Black.svg" alt="Black" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Logo_<wbr>Black.svg</span></div></li><li class="file"><div class="file-prev" style="background:#F8F5EF"><img src="assets/brand/sravico/logos/Sravico_Icon_FullColour.svg" alt="Icon" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Icon_<wbr>FullColour.svg</span></div></li><li class="file"><div class="file-prev" style="background:#183B63"><img src="assets/brand/sravico/logos/Sravico_Icon_Reverse.svg" alt="Icon, reverse" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Icon_<wbr>Reverse.svg</span></div></li><li class="file"><div class="file-prev" style="background:#F27422"><img src="assets/brand/sravico/logos/Sravico_Icon_White.svg" alt="Icon, white" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Icon_<wbr>White.svg</span></div></li><li class="file"><div class="file-prev" style="background:#FAF9F6"><img src="assets/brand/sravico/logos/Sravico_Icon_Black.svg" alt="Icon, black" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>Icon_<wbr>Black.svg</span></div></li><li class="file"><div class="file-prev is-app" style="background:#E9EA86"><img src="assets/brand/sravico/logos/Sravico_AppIcon_Light.svg" alt="App icon, light" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>AppIcon_<wbr>Light.svg</span></div></li><li class="file"><div class="file-prev is-app" style="background:#E9EA86"><img src="assets/brand/sravico/logos/Sravico_AppIcon_Dark.svg" alt="App icon, dark" loading="lazy"></div><div class="file-name"><span class="ext ext-svg">SVG</span><span>Sravico_<wbr>AppIcon_<wbr>Dark.svg</span></div></li></ul></div>
+            <div role="tabpanel" id="pk-pdf" aria-labelledby="tb-pdf" hidden><p class="pk-note">The same ten versions as print-ready PDF.</p><ul class="files"><li class="file"><div class="file-prev" style="background:#F8F5EF"><img src="assets/brand/sravico/logos/Sravico_Logo_FullColour.svg" alt="Full colour" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Logo_<wbr>FullColour.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#183B63"><img src="assets/brand/sravico/logos/Sravico_Logo_Reverse.svg" alt="Reverse" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Logo_<wbr>Reverse.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#F27422"><img src="assets/brand/sravico/logos/Sravico_Logo_White.svg" alt="White" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Logo_<wbr>White.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#FAF9F6"><img src="assets/brand/sravico/logos/Sravico_Logo_Black.svg" alt="Black" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Logo_<wbr>Black.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#F8F5EF"><img src="assets/brand/sravico/logos/Sravico_Icon_FullColour.svg" alt="Icon" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Icon_<wbr>FullColour.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#183B63"><img src="assets/brand/sravico/logos/Sravico_Icon_Reverse.svg" alt="Icon, reverse" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Icon_<wbr>Reverse.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#F27422"><img src="assets/brand/sravico/logos/Sravico_Icon_White.svg" alt="Icon, white" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Icon_<wbr>White.pdf</span></div></li><li class="file"><div class="file-prev" style="background:#FAF9F6"><img src="assets/brand/sravico/logos/Sravico_Icon_Black.svg" alt="Icon, black" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>Icon_<wbr>Black.pdf</span></div></li><li class="file"><div class="file-prev is-app" style="background:#E9EA86"><img src="assets/brand/sravico/logos/Sravico_AppIcon_Light.svg" alt="App icon, light" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>AppIcon_<wbr>Light.pdf</span></div></li><li class="file"><div class="file-prev is-app" style="background:#E9EA86"><img src="assets/brand/sravico/logos/Sravico_AppIcon_Dark.svg" alt="App icon, dark" loading="lazy"></div><div class="file-name"><span class="ext ext-pdf">PDF</span><span>Sravico_<wbr>AppIcon_<wbr>Dark.pdf</span></div></li></ul></div>
+            <div role="tabpanel" id="pk-font" aria-labelledby="tb-font" hidden><p class="pk-note">The brand typeface, ready to install, with its open font licence.</p>
+              <ul class="fonts">
+                <li style="font-weight:300"><span class="fs">Explore the world your way</span><span class="file-name"><span class="ext ext-ttf">TTF</span>Comfortaa-Light.ttf</span></li>
+                <li style="font-weight:400"><span class="fs">Explore the world your way</span><span class="file-name"><span class="ext ext-ttf">TTF</span>Comfortaa-Regular.ttf</span></li>
+                <li style="font-weight:700"><span class="fs">Explore the world your way</span><span class="file-name"><span class="ext ext-ttf">TTF</span>Comfortaa-Bold.ttf</span></li>
+                <li><span class="fs fs-small">SIL Open Font License</span><span class="file-name"><span class="ext ext-txt">TXT</span>OFL.txt</span></li>
+              </ul></div>
+            <div role="tabpanel" id="pk-readme" aria-labelledby="tb-readme" hidden><pre class="readme">Sravico Logo Pack
+
+SVG / PDF: vector files, open and edit in Illustrator.
+Reverse &amp; White versions are light-coloured: use them on navy, orange or photos.
+App icons: 1024 x 1024.
+
+Colours
+  Sravico Orange  #F27422
+  Route Navy      #183B63
+  Oasis Lime      #E9EA86
+  Sand Cream      #F8F5EF
+  Off-White       #FAF9F6
+
+Font: install the three Comfortaa files in /Font before opening the guidelines PDF in Illustrator.
+Tagline: One Route. Endless Destinations.
+</pre></div>
+          </div>
+        </div>
+      </div>
+      <div class="ships">
+        <h3>Every identity I deliver includes</h3>
+        <ul>
+          <li><b>Brand guidelines book</b>Strategy, logo rules, colour, type, pattern and real applications, in one PDF.</li>
+          <li><b>Logo files for every use</b>Full colour, reverse, white and black, as editable SVG and PDF.</li>
+          <li><b>Icon and app icons</b>Ready for app stores, social avatars and favicons.</li>
+          <li><b>Brand fonts</b>The typefaces and their licence, ready to install.</li>
+          <li><b>Colour codes for screen and print</b>HEX, RGB and CMYK for every colour.</li>
+          <li><b>Mockups</b>The brand on real products, so the team knows how it should look.</li>
+        </ul>
+        <a class="ships-cta" href="https://wa.me/201013929391?text=Hi%20Hajar%2C%20I%27d%20like%20a%20brand%20identity" target="_blank" rel="noopener">Start your brand on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="social" class="sec social">
+  <div class="wrap">
+    <p class="stag">Social media</p>
+    <div class="sec-head">
+      <h2 class="stitle">Campaigns that<br>sell the brand.</h2>
+      <p class="lede">Each stack is one brand. Open it to deal out every post, then open any post full size.</p>
+    </div>
+    <ul class="decks"><li class="deck"><button type="button" class="deck-btn" data-deck="0" aria-label="Open Eiffel Medical Hospital, 22 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/eiffel/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/eiffel/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/eiffel/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/eiffel_white.png" alt=""><span class="dk-name">Eiffel Medical Hospital</span><span class="dk-meta">Hospital<span class="dk-count">22 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="1" aria-label="Open Sravico E-commerce, 15 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/sravico-ecom/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/sravico-ecom/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/sravico-ecom/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/sravico_ecom_white.png" alt=""><span class="dk-name">Sravico E-commerce</span><span class="dk-meta">E-commerce services<span class="dk-count">15 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="2" aria-label="Open Shiny Smiles, 14 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/shiny/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/shiny/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/shiny/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/shiny_white.png" alt=""><span class="dk-name">Shiny Smiles</span><span class="dk-meta">Dental clinic<span class="dk-count">14 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="3" aria-label="Open El Villa Dental Clinic, 8 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/elvilla/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/elvilla/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/elvilla/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/elvilla_white.png" alt=""><span class="dk-name">El Villa Dental Clinic</span><span class="dk-meta">Dental clinic<span class="dk-count">8 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="4" aria-label="Open Hayat Dental Clinic, 14 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/hayat/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/hayat/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/hayat/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/hayat_white.png" alt=""><span class="dk-name">Hayat Dental Clinic</span><span class="dk-meta">Dental clinic<span class="dk-count">14 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="5" aria-label="Open Nile Trade, 15 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/nile/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/nile/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/nile/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/nile_white.png" alt=""><span class="dk-name">Nile Trade</span><span class="dk-meta">Agri and grain machinery, B2B<span class="dk-count">15 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="6" aria-label="Open Lorino Medical Wear, 14 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/lorino/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/lorino/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/lorino/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/lorino_white.png" alt=""><span class="dk-name">Lorino Medical Wear</span><span class="dk-meta">Medical scrubs<span class="dk-count">14 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="7" aria-label="Open Al Hassan Auto, 5 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/alhassan/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/alhassan/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/alhassan/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/alhassan_white.png" alt=""><span class="dk-name">Al Hassan Auto</span><span class="dk-meta">Car dealership<span class="dk-count">5 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="8" aria-label="Open MG Hotels &amp; Resorts, 4 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/mg/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/mg/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/mg/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/mg_white.png" alt=""><span class="dk-name">MG Hotels &amp; Resorts</span><span class="dk-meta">Hotels and resorts<span class="dk-count">4 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="9" aria-label="Open n1Fit, 4 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/n1fit/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/n1fit/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/n1fit/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/n1fit_white.png" alt=""><span class="dk-name">n1Fit</span><span class="dk-meta">Sports club<span class="dk-count">4 designs</span></span></span></button></li><li class="deck"><button type="button" class="deck-btn" data-deck="10" aria-label="Open Etamin, 4 designs"><span class="dk-stack"><span class="dk-card dk-c0"><img src="assets/social/etamin/t/03.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c1"><img src="assets/social/etamin/t/02.webp" alt="" loading="lazy" decoding="async"></span><span class="dk-card dk-c2"><img src="assets/social/etamin/t/01.webp" alt="" loading="lazy" decoding="async"></span></span><span class="dk-info"><img class="dk-logo" src="assets/logos/etamin_white.png" alt=""><span class="dk-name">Etamin</span><span class="dk-meta">Medical booking platform<span class="dk-count">4 designs</span></span></span></button></li><li class="deck-cta"><a href="https://wa.me/201013929391?text=Hi%20Hajar%2C%20I%27d%20like%20social%20media%20design" target="_blank" rel="noopener"><b>Your brand next?</b><span>Content that looks like one brand, every single day.</span><i>Start on WhatsApp</i></a></li></ul>
+  </div>
+</section>
+
+<section id="about" class="sec about">
+  <div class="wrap">
+    <p class="stag">About</p>
+    <h2 class="stitle">Who is Hajar</h2>
+
+    <div class="about-2col">
+
+      <div class="about-char-panel">
+        <img
+          src="images/hajar-about.png"
+          alt="Hajar Ragab - Graphic Designer & Art Director"
+          class="about-hajar-image"
+        />
+      </div>
+
+      <div class="about-content-panel">
+        <p class="about-text">
+          I'm <strong>Hajar Ragab</strong>, a graphic designer and art
+          director with <strong>5+ years</strong> in the Egyptian and
+          Arab markets.
+        </p>
+
+        <p class="about-text">
+          I specialise in <strong>complete brand identity</strong> and
+          results-driven social media, using the latest
+          <strong>AI tools</strong> to make a difference in every project.
+        </p>
+
+        <p class="about-text">
+          My goal is to lead a complete creative vision as an
+          <strong>art director</strong>, not just execute it.
+        </p>
+
+        <p class="about-text">
+          I believe design is not just aesthetics. It's an experience
+          that makes people <strong>feel before they think.</strong>
+        </p>
+      </div>
+
+    </div>
+
+    <ul class="svc-grid">
+      <li class="svc">
+        <h3 class="svc-name">Brand identity</h3>
+        <p class="svc-desc">
+          Strategy, logo, guidelines book and the full file pack.
+        </p>
+      </li>
+
+      <li class="svc">
+        <h3 class="svc-name">Social media design</h3>
+        <p class="svc-desc">
+          Visual content that speaks for your brand and converts.
+        </p>
+      </li>
+
+      <li class="svc">
+        <h3 class="svc-name">Art direction</h3>
+        <p class="svc-desc">
+          Leading the full creative vision from concept to execution.
+        </p>
+      </li>
+
+      <li class="svc">
+        <h3 class="svc-name">AI-powered design</h3>
+        <p class="svc-desc">
+          Midjourney and Firefly to reach visuals that weren't possible before.
+        </p>
+      </li>
+
+      <li class="svc">
+        <h3 class="svc-name">Print &amp; packaging</h3>
+        <p class="svc-desc">
+          Brochures, packaging and everything that prints and impresses.
+        </p>
+      </li>
+
+      <li class="svc">
+        <h3 class="svc-name">Digital campaigns</h3>
+        <p class="svc-desc">
+          Integrated visual campaigns, strategic and beautiful.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="skills" class="sec skills">
+  <div class="wrap">
+    <p class="stag">Skills</p>
+    <h2 class="stitle">How I work</h2>
+    <div class="skills-layout">
+      <div>
+        <!-- <div class="skills-char" aria-hidden="true"><svg class="float-anim" viewBox="0 0 240 290" width="210" height="260" xmlns="http://www.w3.org/2000/svg" style="animation-delay:.4s;">
+          <defs><radialGradient id="sk4" cx="45%" cy="35%" r="60%"><stop offset="0%" stop-color="#f8dfc0"/><stop offset="100%" stop-color="#c07840"/></radialGradient><radialGradient id="hj4" cx="50%" cy="25%" r="70%"><stop offset="0%" stop-color="#cfc0b0"/><stop offset="100%" stop-color="#786858"/></radialGradient></defs>
+          <rect x="170" y="128" width="54" height="64" rx="8" fill="#0d0010" stroke="#9d4edd" stroke-width="1.5"/>
+          <rect x="178" y="108" width="38" height="28" rx="6" fill="#080010" stroke="#9d4edd" stroke-width="1.5"/>
+          <circle cx="190" cy="121" r="6" fill="#7c3aed"/><circle cx="206" cy="121" r="6" fill="#7c3aed"/>
+          <circle cx="190" cy="121" r="2.5" fill="#f97316"/><circle cx="206" cy="121" r="2.5" fill="#f97316"/>
+          <rect x="180" y="154" width="30" height="5" rx="2" fill="#7c3aed" opacity="0.7"/>
+          <rect x="183" y="163" width="9" height="9" rx="1" fill="#f97316" opacity="0.7"/>
+          <rect x="198" y="163" width="9" height="9" rx="1" fill="#f97316" opacity="0.7"/>
+          <line x1="197" y1="108" x2="197" y2="97" stroke="#9d4edd" stroke-width="2"/>
+          <circle cx="197" cy="94" r="4" fill="#9d4edd"/>
+          <path d="M158 200 Q167 192 170 178" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+          <path d="M46 200 Q38 242 36 290 L164 290 Q162 242 154 200 Q130 180 100 178 Q70 180 46 200Z" fill="#9d4edd"/>
+          <rect x="94" y="156" width="12" height="26" rx="6" fill="url(#sk4)"/>
+          <ellipse cx="100" cy="120" rx="44" ry="48" fill="url(#sk4)"/>
+          <ellipse cx="100" cy="104" rx="54" ry="60" fill="url(#hj4)"/>
+          <ellipse cx="100" cy="122" rx="36" ry="42" fill="url(#sk4)"/>
+          <path d="M46 104 Q36 148 42 188 Q60 175 76 158 Q60 136 56 108Z" fill="#a89080"/>
+          <path d="M154 104 Q164 148 158 188 Q140 175 124 158 Q140 136 144 108Z" fill="#a89080"/>
+          <ellipse cx="100" cy="64" rx="42" ry="22" fill="#c4b4a2"/>
+          <ellipse cx="83" cy="120" rx="17" ry="12" fill="rgba(180,140,40,0.1)" stroke="#c8a030" stroke-width="2"/>
+          <ellipse cx="117" cy="120" rx="17" ry="12" fill="rgba(180,140,40,0.1)" stroke="#c8a030" stroke-width="2"/>
+          <path d="M68 119 Q83 110 100 119" stroke="#1a0805" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="117" cy="122" rx="11" ry="9" fill="white"/><ellipse cx="117" cy="124" rx="7" ry="7" fill="#5a3010"/><ellipse cx="117" cy="124" rx="4" ry="4" fill="#0d0400"/><ellipse cx="114" cy="121" rx="2.5" ry="2.5" fill="white" opacity="0.9"/>
+          <path d="M80 150 Q100 163 120 150" stroke="#c07060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="91" cy="133" r="1.5" fill="#a06828" opacity="0.5"/><circle cx="97" cy="130" r="1.2" fill="#a06828" opacity="0.45"/><circle cx="103" cy="133" r="1.7" fill="#a06828" opacity="0.5"/><circle cx="109" cy="132" r="1.2" fill="#a06828" opacity="0.42"/>
+          <ellipse cx="68" cy="133" rx="10" ry="5" fill="#f5a090" opacity="0.2"/>
+          <ellipse cx="132" cy="133" rx="10" ry="5" fill="#f5a090" opacity="0.2"/>
+          <text x="4" y="62" fill="#f97316" font-size="14" opacity="0.6">✦</text><text x="4" y="195" fill="#9d4edd" font-size="12" opacity="0.42">◈</text>
+        </svg></div> -->
+        <ul class="ai-tools">
+          <li class="ai-tool"><span class="ai-name">Midjourney</span><span class="ai-desc">Characters and visual concepts</span></li>
+          <li class="ai-tool"><span class="ai-name">Adobe Firefly</span><span class="ai-desc">AI editing in Photoshop</span></li>
+          <li class="ai-tool"><span class="ai-name">Stable Diffusion</span><span class="ai-desc">Full style customisation</span></li>
+          <li class="ai-tool"><span class="ai-name">Runway ML</span><span class="ai-desc">Images that move</span></li>
+        </ul>
+      </div>
+      <ul class="bars">
+        <li><div class="bar-top"><span class="bar-name">Brand identity</span><span class="bar-pct">95%</span></div><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></li>
+        <li><div class="bar-top"><span class="bar-name">Social media design</span><span class="bar-pct">98%</span></div><div class="bar-track"><div class="bar-fill" style="width:98%"></div></div></li>
+        <li><div class="bar-top"><span class="bar-name">Adobe Suite (PS / AI / ID)</span><span class="bar-pct">96%</span></div><div class="bar-track"><div class="bar-fill" style="width:96%"></div></div></li>
+        <li><div class="bar-top"><span class="bar-name">AI tools</span><span class="bar-pct">90%</span></div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></li>
+        <li><div class="bar-top"><span class="bar-name">Print & packaging</span><span class="bar-pct">88%</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></li>
+        <li><div class="bar-top"><span class="bar-name">Art direction</span><span class="bar-pct">83%</span></div><div class="bar-track"><div class="bar-fill" style="width:83%"></div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec contact">
+  <div class="wrap contact-layout">
+    <div><p class="stag">Contact</p><p class="contact-big">Let's<span>make</span><span class="ghost">something</span>great.</p></div>
+    <ul class="ci-list">
+      <li class="ci"><span class="ci-label">Email</span><a class="ci-val" href="mailto:hajer.hr.graphicdesigner@gmail.com">hajer.hr.graphicdesigner@gmail.com</a></li>
+      <li class="ci"><span class="ci-label">WhatsApp</span><a class="ci-val" href="https://wa.me/201013929391" target="_blank" rel="noopener">+20 101 392 9391</a></li>
+      <li class="ci"><span class="ci-label">Behance</span><a class="ci-val" href="https://www.behance.net/hajjerrata" target="_blank" rel="noopener">behance.net/hajjerrata</a></li>
+      <li class="ci"><span class="ci-label">Instagram</span><a class="ci-val" href="https://www.instagram.com/hjr.rgb" target="_blank" rel="noopener">@hjr.rgb</a></li>
+      <li class="ci"><span class="ci-label">Availability</span><span class="ci-val ci-open">✦ Open for freelance and full-time</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="flogo">HAJAR<span>.</span></div>
+  <p class="fcopy">© 2026 Hajar Ragab. All rights reserved.</p>
+  <div class="fsocials"><a href="https://www.behance.net/hajjerrata" target="_blank" rel="noopener">Behance</a><a href="https://www.instagram.com/hjr.rgb" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/201013929391" target="_blank" rel="noopener">WhatsApp</a></div>
+</footer>
+
+<div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle" hidden><div class="case-scroll" id="caseScroll"></div></div>
+<div class="dsheet" id="dsheet" role="dialog" aria-modal="true" aria-labelledby="deckTitle" hidden><div class="ds-scroll" id="dsScroll"></div></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button type="button" class="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button type="button" class="lb-nav lb-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <figure class="lb-fig"><img id="lbImg" alt=""><figcaption><span id="lbCap"></span><span id="lbCount"></span></figcaption></figure>
+  <button type="button" class="lb-nav lb-next" aria-label="Next image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script id="data" type="application/json">{"brands": [{"slug": "sravico", "name": "Sravico", "tagline": "One Route. Endless Destinations.", "industry": "Travel and tourism, Egypt", "year": "2026", "delivered": "Strategy, logo, colour, type, pattern, 50-page guidelines, logo pack, mockups", "chips": ["50-page guidelines", "Logo pack", "12 mockups"], "theme": {"bg": "#F8F5EF", "ink": "#183B63", "muted": "#55657A", "acc": "#F27422", "surf": "#FFFFFF", "hero": "#183B63", "heroInk": "#F8F5EF", "font": "'Comfortaa',sans-serif"}, "logo": {"hero": "assets/brand/sravico/logos/Sravico_Logo_Reverse.svg", "bar": "assets/logos/sravico_white.svg", "card": "assets/brand/sravico/logos/Sravico_Logo_White.svg"}, "cover": {"src": "assets/brand/sravico/mockups/sravico_04_business_cards.jpg", "w": 1672, "h": 940, "cap": "Business cards"}, "brief": "An Egyptian travel brand that takes you anywhere, from Siwa and Aswan to Istanbul, Dubai and Bali. Visas, flights, hotels and the programme are handled in one place, for young travellers and families.", "idea": "For many Egyptians, travelling feels expensive and complicated. The identity turns all those separate steps into one continuous route, from your door to anywhere.", "process": [{"t": "The route", "d": "The letter C becomes the road, the start of every journey.", "img": {"src": "assets/brand/sravico/pages/m/p19.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "The destination", "d": "A location pin marks any place you are going, near or far.", "img": {"src": "assets/brand/sravico/pages/m/p20.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "The infinity", "d": "One unbroken line joins them into ∞: endless destinations.", "img": {"src": "assets/brand/sravico/pages/m/p18.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "The system", "d": "Colour, the Comfortaa typeface, the route pattern and a warm tone of voice.", "img": {"src": "assets/brand/sravico/pages/m/p29.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "The handover", "d": "A 50-page guidelines book and a logo pack ready for any designer or printer.", "img": {"src": "assets/brand/sravico/pages/m/p01.webp", "w": 1200, "h": 675, "cap": ""}}], "colours": [{"n": "Sravico Orange", "hex": "#F27422", "rgb": "242, 116, 34", "cmyk": "0, 52, 86, 5"}, {"n": "Route Navy", "hex": "#183B63", "rgb": "24, 59, 99", "cmyk": "76, 40, 0, 61"}, {"n": "Oasis Lime", "hex": "#E9EA86", "rgb": "233, 234, 134", "cmyk": "0, 0, 43, 8"}, {"n": "Sand Cream", "hex": "#F8F5EF", "rgb": "248, 245, 239", "cmyk": "0, 1, 4, 3"}, {"n": "Off-White", "hex": "#FAF9F6", "rgb": "250, 249, 246", "cmyk": "0, 0, 2, 2"}], "type": [{"n": "Comfortaa", "d": "Logo, headlines and text. Its round terminals repeat the curves of the route.", "css": "'Comfortaa',sans-serif"}], "voice": ["“Your visa application #2231 has been processed successfully.”", "“Your visa is ready! Pack your bags, Istanbul is waiting for you.”"], "versions": [{"src": "assets/brand/sravico/logos/Sravico_Logo_FullColour.svg", "bg": "#FAF9F6", "label": "Full colour"}, {"src": "assets/brand/sravico/logos/Sravico_Logo_Reverse.svg", "bg": "#183B63", "label": "Reverse"}, {"src": "assets/brand/sravico/logos/Sravico_Logo_White.svg", "bg": "#F27422", "label": "White"}, {"src": "assets/brand/sravico/logos/Sravico_Logo_Black.svg", "bg": "#FFFFFF", "label": "Black"}], "book": {"pages": 50, "label": "Brand guidelines", "dir": "assets/brand/sravico/pages"}, "gallery": [{"src": "assets/brand/sravico/mockups/sravico_02_website.jpg", "w": 1672, "h": 941, "cap": "Website"}, {"src": "assets/brand/sravico/mockups/sravico_01_app_icon.jpg", "w": 1672, "h": 941, "cap": "App icon and store listing"}, {"src": "assets/brand/sravico/mockups/sravico_03_instagram.jpg", "w": 1672, "h": 941, "cap": "Instagram"}, {"src": "assets/brand/sravico/mockups/sravico_08_storefront.jpg", "w": 1672, "h": 941, "cap": "Storefront"}, {"src": "assets/brand/sravico/mockups/sravico_05_passport_luggage_tag.jpg", "w": 1672, "h": 941, "cap": "Passport cover and luggage tag"}, {"src": "assets/brand/sravico/mockups/sravico_06_airport_transfer.jpg", "w": 1672, "h": 941, "cap": "Airport transfer"}, {"src": "assets/brand/sravico/mockups/sravico_07_uniform_office.jpg", "w": 1672, "h": 941, "cap": "Staff uniform"}, {"src": "assets/brand/sravico/mockups/sravico_09_tour_coach.jpg", "w": 1672, "h": 941, "cap": "Tour coach"}, {"src": "assets/brand/sravico/mockups/sravico_10_polo_shirt.jpg", "w": 1672, "h": 941, "cap": "Polo shirt"}, {"src": "assets/brand/sravico/mockups/sravico_11_cap.jpg", "w": 1672, "h": 941, "cap": "Cap"}, {"src": "assets/brand/sravico/mockups/sravico_12_tote_bag.jpg", "w": 1672, "h": 941, "cap": "Tote bag"}, {"src": "assets/brand/sravico/mockups/sravico_04_business_cards.jpg", "w": 1672, "h": 940, "cap": "Business cards"}]}, {"slug": "apex", "name": "Apex Grooming", "tagline": "Peak. Precision. Presence.", "industry": "Men's grooming, Saudi Arabia", "year": "2026", "delivered": "Strategy, logo, pattern, colour, type, 36-page guidelines, applications", "chips": ["36-page guidelines", "Strategy", "Pattern"], "theme": {"bg": "#0A0A0A", "ink": "#F4F1EA", "muted": "#A8A296", "acc": "#C8A24B", "surf": "#151515", "hero": "#0A0A0A", "heroInk": "#F4F1EA", "font": "'Tajawal',sans-serif"}, "logo": {"hero": "assets/logos/apex_white.png", "bar": "assets/logos/apex_white.png", "card": "assets/logos/apex_white.png"}, "cover": {"src": "assets/brand/apex/img/action_1.jpg", "w": 1672, "h": 941, "cap": "Storefront signage"}, "brief": "A premium men's barbershop in Saudi Arabia. “Apex” means the peak: the highest point of skill, service and presence. The mission is to deliver the sharpest grooming experience, with the same craft for every client on every visit.", "idea": "Premium without being distant. Executive-level precision that stays open to every man, steering clear of vintage barbershop clichés and closed luxury.", "process": [{"t": "Strategy", "d": "Definition, mission and vision: help every man stand at his peak.", "img": {"src": "assets/brand/apex/pages/m/p04.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Personality", "d": "The Ruler with a touch of the Creator. Assured, concise, respectful.", "img": {"src": "assets/brand/apex/pages/m/p11.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Logo", "d": "A distinctive peak icon, a bold serif wordmark and a spaced descriptor.", "img": {"src": "assets/brand/apex/pages/m/p21.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "System", "d": "Black leads, white gives space, gold is the accent. Scissors and mustache as a quiet pattern.", "img": {"src": "assets/brand/apex/pages/m/p26.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Applications", "d": "Storefront, uniforms and capes, all in black and gold.", "img": {"src": "assets/brand/apex/pages/m/p33.webp", "w": 1200, "h": 675, "cap": ""}}], "colours": [{"n": "Black", "hex": "#0A0A0A", "rgb": "10, 10, 10", "cmyk": "0, 0, 0, 96"}, {"n": "White", "hex": "#FFFFFF", "rgb": "255, 255, 255", "cmyk": "0, 0, 0, 0"}, {"n": "Gold", "hex": "#C8A24B", "rgb": "200, 162, 75", "cmyk": "0, 19, 63, 22"}], "type": [{"n": "Minion Variable Concept", "d": "English typeface: refined, highly legible and confident, echoing the serif of the wordmark. Sizes follow the golden ratio: 15, 24, 40.", "css": null}], "voice": null, "versions": [{"src": "assets/logos/apex_black.png", "bg": "#FFFFFF", "label": "Primary"}, {"src": "assets/logos/apex_white.png", "bg": "#0A0A0A", "label": "On black"}, {"src": "assets/logos/apex_gold.png", "bg": "#0A0A0A", "label": "Gold on black"}], "book": {"pages": 36, "label": "Brand guidelines", "dir": "assets/brand/apex/pages"}, "gallery": [{"src": "assets/brand/apex/img/action_1.jpg", "w": 1672, "h": 941, "cap": "Storefront signage, gold lettering on black"}, {"src": "assets/brand/apex/img/action_2.jpg", "w": 1672, "h": 941, "cap": "Staff uniform, embroidered chest logo"}, {"src": "assets/brand/apex/img/action_3.jpg", "w": 1672, "h": 941, "cap": "Barber cape, gold print on black"}, {"src": "assets/brand/apex/img/pattern.webp", "w": 2400, "h": 1350, "cap": "The scissors and mustache pattern"}]}, {"slug": "numi", "name": "NUMI", "tagline": "Comfort, softness and peace of mind.", "industry": "Clean beauty skincare", "year": "", "delivered": "Moodboard, logo, colour, type, packaging, billboard, social", "chips": ["Brand presentation", "Packaging", "Billboard"], "theme": {"bg": "#FAF8E9", "ink": "#3B4430", "muted": "#6C735F", "acc": "#899676", "surf": "#FFFFFF", "hero": "#899676", "heroInk": "#FAF8E9", "font": "'Tajawal',sans-serif"}, "logo": {"hero": "assets/logos/numi_white.png", "bar": "assets/logos/numi_white.png", "card": "assets/logos/numi_white.png"}, "cover": {"src": "assets/brand/numi/pages/p03.webp", "w": 2400, "h": 1350, "cap": "Hydra Glow packaging"}, "brief": "A natural beauty brand inspired by the meaning of its name: comfort, softness and peace of mind. Gentle, nature-based skincare that embraces self-care, for women aged 18 to 35.", "idea": "A leaf is subtly embedded in the logo, so the brand’s nature lives inside its name. The type is a customised modern serif with an elegant, feminine feel.", "process": [{"t": "Moodboard", "d": "Glowing skin, soft botanicals and warm neutrals set the mood.", "img": {"src": "assets/brand/numi/pages/m/p09.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Concept", "d": "Comfort and softness, with a leaf element hidden in the mark.", "img": {"src": "assets/brand/numi/pages/m/p07.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Logo", "d": "Veisser Modern, customised for a personal, luxurious touch.", "img": {"src": "assets/brand/numi/pages/m/p02.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Colour", "d": "Sage, rose, peach and cream, calm and natural.", "img": {"src": "assets/brand/numi/pages/m/p08.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Packaging", "d": "The Hydra Glow line in deep green with natural wood caps.", "img": {"src": "assets/brand/numi/pages/m/p06.webp", "w": 1200, "h": 675, "cap": ""}}], "colours": [{"n": "Sage", "hex": "#899676", "rgb": null, "cmyk": null}, {"n": "Rose", "hex": "#CEA894", "rgb": null, "cmyk": null}, {"n": "Peach", "hex": "#E2C09D", "rgb": null, "cmyk": null}, {"n": "Cream", "hex": "#FAF8E9", "rgb": null, "cmyk": null}], "type": [{"n": "Veisser Modern", "d": "Logo typeface, customised to strengthen the luxurious identity.", "css": null}, {"n": "Modern No. 20", "d": "Text typeface: classic, graceful and readable.", "css": null}], "voice": null, "versions": [{"src": "assets/logos/numi_color.png", "bg": "#FAF8E9", "label": "On cream"}, {"src": "assets/logos/numi_white.png", "bg": "#899676", "label": "On sage"}, {"src": "assets/logos/numi_white.png", "bg": "#231F20", "label": "On black"}, {"src": "assets/logos/numi_white.png", "bg": "#E2C09D", "label": "On peach"}], "book": {"pages": 11, "label": "Brand presentation", "dir": "assets/brand/numi/pages"}, "gallery": [{"src": "assets/brand/numi/pages/p01.webp", "w": 2400, "h": 1350, "cap": "Hero visual"}, {"src": "assets/brand/numi/pages/p03.webp", "w": 2400, "h": 1350, "cap": "Packaging"}, {"src": "assets/brand/numi/img/billboard.jpg", "w": 1200, "h": 675, "cap": "Billboard"}, {"src": "assets/brand/numi/pages/p06.webp", "w": 2400, "h": 1350, "cap": "Product family"}, {"src": "assets/brand/numi/img/ig_01.jpg", "w": 675, "h": 1200, "cap": "Feed, glow series"}, {"src": "assets/brand/numi/img/ig_02.jpg", "w": 675, "h": 1200, "cap": "Feed, before and after"}, {"src": "assets/brand/numi/img/ig_03.jpg", "w": 680, "h": 1200, "cap": "Feed, mask series"}, {"src": "assets/brand/numi/img/hero.jpg", "w": 808, "h": 632, "cap": "Campaign visual"}]}, {"slug": "savaur", "name": "Savaur", "tagline": "Counted calories, real taste.", "industry": "Healthy meals app, Sharjah", "year": "", "delivered": "Logo, colour, type, app icon, app screens, social", "chips": ["Brand presentation", "App", "Sketch to logo"], "theme": {"bg": "#F3F7D1", "ink": "#24391C", "muted": "#56664A", "acc": "#C04F1F", "surf": "#FFFFFF", "hero": "#345525", "heroInk": "#F3F7D1", "font": "'Cairo','Tajawal',sans-serif"}, "logo": {"hero": "assets/logos/savaur_white.png", "bar": "assets/logos/savaur_white.png", "card": "assets/logos/savaur_white.png"}, "cover": {"src": "assets/brand/savaur/pages/p01.webp", "w": 2400, "h": 1350, "cap": "Brand visual"}, "brief": "A healthy-meals restaurant in Muwaileh, Sharjah, supported by the Ruwwad foundation for small projects. Every meal uses natural ingredients, with its nutritional value and calories calculated.", "idea": "The letter S merged with a tree leaf cut in half: healthy eating in one simple geometric mark.", "process": [{"t": "Sketches", "d": "Hand sketches exploring the S and the leaf.", "img": {"src": "assets/brand/savaur/img/sketch.jpg", "w": 1156, "h": 652, "cap": ""}}, {"t": "Concept", "d": "A leaf for healthy food, plus a simple S shape.", "img": {"src": "assets/brand/savaur/pages/m/p07.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Logo", "d": "The S sits inside a leaf cut in half, set in Cairo.", "img": {"src": "assets/brand/savaur/pages/m/p02.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "Colour", "d": "Leaf green, spice orange, lemon yellow and a fresh cream.", "img": {"src": "assets/brand/savaur/pages/m/p08.webp", "w": 1200, "h": 675, "cap": ""}}, {"t": "App and social", "d": "The app icon, order screens and launch posts.", "img": {"src": "assets/brand/savaur/pages/m/p03.webp", "w": 1200, "h": 675, "cap": ""}}], "colours": [{"n": "Leaf Green", "hex": "#345525", "rgb": null, "cmyk": null}, {"n": "Spice Orange", "hex": "#C04F1F", "rgb": null, "cmyk": null}, {"n": "Lemon", "hex": "#EEC01B", "rgb": null, "cmyk": null}, {"n": "Fresh Cream", "hex": "#F3F7D1", "rgb": null, "cmyk": null}], "type": [{"n": "Cairo Regular", "d": "Logo typeface: modern and clean, in both Arabic and Latin.", "css": "'Cairo',sans-serif"}, {"n": "Adobe Arabic", "d": "Body typeface: clear, balanced and trustworthy.", "css": null}], "voice": null, "versions": [{"src": "assets/logos/savaur_color.png", "bg": "#F3F7D1", "label": "Full colour"}, {"src": "assets/logos/savaur_white.png", "bg": "#345525", "label": "On green"}, {"src": "assets/logos/savaur_white.png", "bg": "#C04F1F", "label": "On orange"}, {"src": "assets/logos/savaur_color.png", "bg": "#EEC01B", "label": "On yellow"}], "book": {"pages": 14, "label": "Brand presentation", "dir": "assets/brand/savaur/pages"}, "gallery": [{"src": "assets/brand/savaur/pages/p01.webp", "w": 2400, "h": 1350, "cap": "Brand visual"}, {"src": "assets/brand/savaur/pages/p03.webp", "w": 2400, "h": 1350, "cap": "App icon"}, {"src": "assets/brand/savaur/pages/p06.webp", "w": 2400, "h": 1350, "cap": "Order now"}, {"src": "assets/brand/savaur/pages/p09.webp", "w": 2400, "h": 1350, "cap": "In the app"}, {"src": "assets/brand/savaur/pages/p12.webp", "w": 2400, "h": 1350, "cap": "Counted calories, real taste"}, {"src": "assets/brand/savaur/pages/p10.webp", "w": 2400, "h": 1350, "cap": "Sketches and moodboard"}, {"src": "assets/brand/savaur/img/uniform.jpg", "w": 1200, "h": 514, "cap": "Delivery uniform"}, {"src": "assets/brand/savaur/img/social_02.jpg", "w": 1200, "h": 674, "cap": "Social post"}]}, {"slug": "abaa", "name": "Abaa", "ar": "عباءة", "tagline": "لأن ذوقك لا يشبه سواه", "taglineEn": "Because your taste is like no one else’s.", "industry": "Luxury abayas", "year": "", "delivered": "Calligraphic logo, pattern, packaging, thank-you cards, social cover", "chips": ["Calligraphy logo", "Packaging", "Print"], "theme": {"bg": "#2D161F", "ink": "#F3E9E2", "muted": "#C4ABA2", "acc": "#B5875C", "surf": "#3B1F2A", "hero": "#502E3A", "heroInk": "#F3E9E2", "font": "'Tajawal',sans-serif"}, "logo": {"hero": "assets/logos/abaa_white.png", "bar": "assets/logos/abaa_white.png", "card": "assets/logos/abaa_white.png"}, "cover": {"src": "assets/brand/abaa/img/collage.webp", "w": 1080, "h": 1350, "cap": "The full identity"}, "brief": "A luxury abaya brand that wanted every piece to feel made for one woman. The identity had to be personal, soft and premium, from the label to the bag.", "idea": "A tall calligraphic mark that flows like fabric, paired with the Latin name. It repeats as a pattern on tissue paper and is foiled in gold on deep maroon.", "process": [{"t": "Calligraphic logo", "d": "One flowing Arabic letterform with the Latin name beside it.", "img": {"src": "assets/brand/abaa/img/logo_maroon.webp", "w": 1080, "h": 1080, "cap": ""}}, {"t": "Pattern", "d": "The mark repeated as a wrapping pattern for tissue paper.", "img": {"src": "assets/brand/abaa/img/tissue.webp", "w": 827, "h": 591, "cap": ""}}, {"t": "Print", "d": "Thank-you cards with a woven border, in maroon and lilac.", "img": {"src": "assets/brand/abaa/img/thanks_01.webp", "w": 1207, "h": 1800, "cap": ""}}, {"t": "Packaging", "d": "Gold on maroon for bags, labels and wrapping.", "img": {"src": "assets/brand/abaa/img/collage.webp", "w": 1080, "h": 1350, "cap": ""}}, {"t": "Digital", "d": "A social cover that speaks in the brand’s voice.", "img": {"src": "assets/brand/abaa/img/fb_cover.webp", "w": 2400, "h": 1054, "cap": ""}}], "colours": [{"n": "Maroon", "hex": "#502E3A", "rgb": null, "cmyk": null}, {"n": "Burgundy", "hex": "#541624", "rgb": null, "cmyk": null}, {"n": "Gold", "hex": "#B5875C", "rgb": null, "cmyk": null}, {"n": "Sand", "hex": "#DECEBD", "rgb": null, "cmyk": null}], "type": [], "voice": null, "versions": [{"src": "assets/logos/abaa_white.png", "bg": "#502E3A", "label": "On maroon"}, {"src": "assets/logos/abaa_white.png", "bg": "#B5875C", "label": "On gold"}, {"src": "assets/logos/abaa_color.png", "bg": "#DECEBD", "label": "On sand"}], "book": null, "gallery": [{"src": "assets/brand/abaa/img/collage.webp", "w": 1080, "h": 1350, "cap": "Labels, bag, packaging and cards"}, {"src": "assets/brand/abaa/img/fb_cover.webp", "w": 2400, "h": 1054, "cap": "Facebook cover"}, {"src": "assets/brand/abaa/img/thanks_01.webp", "w": 1207, "h": 1800, "cap": "Thank-you card, front"}, {"src": "assets/brand/abaa/img/thanks_02.webp", "w": 1207, "h": 1800, "cap": "Thank-you card, back"}, {"src": "assets/brand/abaa/img/tissue.webp", "w": 827, "h": 591, "cap": "Tissue paper pattern"}]}, {"slug": "patiolux", "name": "Patiolux", "tagline": "At Patiolux, you don’t have to guess.", "industry": "Premium outdoor furniture", "year": "", "delivered": "Logo, stationery, leather tags, coasters, signage, social", "chips": ["Logo", "Materials", "Social"], "theme": {"bg": "#F4F0E6", "ink": "#073543", "muted": "#4C6468", "acc": "#B18762", "surf": "#FFFFFF", "hero": "#073543", "heroInk": "#F4F0E6", "font": "'Tajawal',sans-serif"}, "logo": {"hero": "assets/logos/patiolux_white.png", "bar": "assets/logos/patiolux_white.png", "card": "assets/logos/patiolux_white.png"}, "cover": {"src": "assets/brand/patiolux/img/poster.webp", "w": 1493, "h": 2000, "cap": "Brand poster"}, "brief": "An outdoor furniture maker designing since 2013 for villas, hotels, rooftops and private spaces. Not a reseller: they manufacture, control and deliver every piece.", "idea": "The P carries a dot like a question mark, echoing the brand’s promise to buyers who once ordered online and regretted it.", "process": [{"t": "Logo", "d": "A bold P whose dot turns it into a question mark.", "img": {"src": "assets/brand/patiolux/img/logo_teal.webp", "w": 1080, "h": 1080, "cap": ""}}, {"t": "Stationery", "d": "Business cards on warm, textured stock.", "img": {"src": "assets/brand/patiolux/img/business_card.webp", "w": 1493, "h": 2000, "cap": ""}}, {"t": "Materials", "d": "Debossed leather tags and stone coasters that live with the furniture.", "img": {"src": "assets/brand/patiolux/img/leather_tag.webp", "w": 1493, "h": 2000, "cap": ""}}, {"t": "Touchpoints", "d": "Signage, uniforms and vehicles in deep teal.", "img": {"src": "assets/brand/patiolux/img/identity_collage.jpg", "w": 960, "h": 1200, "cap": ""}}, {"t": "Social", "d": "A feed that answers buyers’ doubts.", "img": {"src": "assets/brand/patiolux/img/social.webp", "w": 1080, "h": 1350, "cap": ""}}], "colours": [{"n": "Deep Teal", "hex": "#073543", "rgb": null, "cmyk": null}, {"n": "Cream", "hex": "#F4F0E6", "rgb": null, "cmyk": null}, {"n": "Leather", "hex": "#B18762", "rgb": null, "cmyk": null}, {"n": "Charcoal", "hex": "#122327", "rgb": null, "cmyk": null}], "type": [], "voice": null, "versions": [{"src": "assets/logos/patiolux_white.png", "bg": "#073543", "label": "On teal"}, {"src": "assets/logos/patiolux_white.png", "bg": "#B18762", "label": "On leather"}, {"src": "assets/logos/patiolux_white.png", "bg": "#122327", "label": "On charcoal"}], "book": null, "gallery": [{"src": "assets/brand/patiolux/img/poster.webp", "w": 1493, "h": 2000, "cap": "Brand poster"}, {"src": "assets/brand/patiolux/img/business_card.webp", "w": 1493, "h": 2000, "cap": "Business card"}, {"src": "assets/brand/patiolux/img/leather_tag.webp", "w": 1493, "h": 2000, "cap": "Leather tag"}, {"src": "assets/brand/patiolux/img/coaster.webp", "w": 1493, "h": 2000, "cap": "Stone coaster"}, {"src": "assets/brand/patiolux/img/sofa_tag.webp", "w": 1493, "h": 2000, "cap": "Sofa tag"}, {"src": "assets/brand/patiolux/img/identity_collage.jpg", "w": 960, "h": 1200, "cap": "Signage, uniform and vehicle"}, {"src": "assets/brand/patiolux/img/social.webp", "w": 1080, "h": 1350, "cap": "Social feed"}]}], "decks": [{"slug": "eiffel", "name": "Eiffel Medical Hospital", "ind": "Hospital", "desc": "A year-round awareness campaign: one specialty per post, real patient moments and a clear call to book.", "items": [{"f": "assets/social/eiffel/01.webp", "t": "assets/social/eiffel/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/02.webp", "t": "assets/social/eiffel/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/03.webp", "t": "assets/social/eiffel/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/04.webp", "t": "assets/social/eiffel/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/05.webp", "t": "assets/social/eiffel/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/06.webp", "t": "assets/social/eiffel/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/07.webp", "t": "assets/social/eiffel/t/07.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/08.webp", "t": "assets/social/eiffel/t/08.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/09.webp", "t": "assets/social/eiffel/t/09.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/10.webp", "t": "assets/social/eiffel/t/10.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/11.webp", "t": "assets/social/eiffel/t/11.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/12.webp", "t": "assets/social/eiffel/t/12.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/13.webp", "t": "assets/social/eiffel/t/13.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/14.webp", "t": "assets/social/eiffel/t/14.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/15.webp", "t": "assets/social/eiffel/t/15.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/16.webp", "t": "assets/social/eiffel/t/16.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/17.webp", "t": "assets/social/eiffel/t/17.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/18.webp", "t": "assets/social/eiffel/t/18.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/19.webp", "t": "assets/social/eiffel/t/19.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/20.webp", "t": "assets/social/eiffel/t/20.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/21.webp", "t": "assets/social/eiffel/t/21.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/eiffel/22.webp", "t": "assets/social/eiffel/t/22.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/eiffel_white.png"}, {"slug": "sravico-ecom", "name": "Sravico E-commerce", "ind": "E-commerce services", "desc": "A launch campaign for an e-commerce management service selling on Amazon, Noon and Jumia, built on one glowing orange visual language.", "items": [{"f": "assets/social/sravico-ecom/01.webp", "t": "assets/social/sravico-ecom/t/01.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/02.webp", "t": "assets/social/sravico-ecom/t/02.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/03.webp", "t": "assets/social/sravico-ecom/t/03.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/04.webp", "t": "assets/social/sravico-ecom/t/04.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/05.webp", "t": "assets/social/sravico-ecom/t/05.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/06.webp", "t": "assets/social/sravico-ecom/t/06.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/07.webp", "t": "assets/social/sravico-ecom/t/07.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/08.webp", "t": "assets/social/sravico-ecom/t/08.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/09.webp", "t": "assets/social/sravico-ecom/t/09.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/10.webp", "t": "assets/social/sravico-ecom/t/10.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/11.webp", "t": "assets/social/sravico-ecom/t/11.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/12.webp", "t": "assets/social/sravico-ecom/t/12.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/13.webp", "t": "assets/social/sravico-ecom/t/13.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/14.webp", "t": "assets/social/sravico-ecom/t/14.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/sravico-ecom/15.webp", "t": "assets/social/sravico-ecom/t/15.webp", "w": 1080, "h": 1440, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/sravico_ecom_white.png"}, {"slug": "shiny", "name": "Shiny Smiles", "ind": "Dental clinic", "desc": "Patient education and treatment posts for Dr. Andrew Amin's clinic, plus a six-part \"5 signs\" carousel.", "items": [{"f": "assets/social/shiny/01.webp", "t": "assets/social/shiny/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/02.webp", "t": "assets/social/shiny/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/03.webp", "t": "assets/social/shiny/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/04.webp", "t": "assets/social/shiny/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/05.webp", "t": "assets/social/shiny/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/06.webp", "t": "assets/social/shiny/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/07.webp", "t": "assets/social/shiny/t/07.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/08.webp", "t": "assets/social/shiny/t/08.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/09.webp", "t": "assets/social/shiny/t/09.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/10.webp", "t": "assets/social/shiny/t/10.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/11.webp", "t": "assets/social/shiny/t/11.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/12.webp", "t": "assets/social/shiny/t/12.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/13.webp", "t": "assets/social/shiny/t/13.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/shiny/14.webp", "t": "assets/social/shiny/t/14.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/shiny_white.png"}, {"slug": "elvilla", "name": "El Villa Dental Clinic", "ind": "Dental clinic", "desc": "A consistent blue feed with 3D tooth characters that make dental advice friendly.", "items": [{"f": "assets/social/elvilla/01.webp", "t": "assets/social/elvilla/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/02.webp", "t": "assets/social/elvilla/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/03.webp", "t": "assets/social/elvilla/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/04.webp", "t": "assets/social/elvilla/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/05.webp", "t": "assets/social/elvilla/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/06.webp", "t": "assets/social/elvilla/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/elvilla/07.webp", "t": "assets/social/elvilla/t/07.webp", "w": 1284, "h": 2778, "kind": "screen", "cap": "The Instagram feed", "slides": null}, {"f": "assets/social/elvilla/08.webp", "t": "assets/social/elvilla/t/08.webp", "w": 1284, "h": 2778, "kind": "screen", "cap": "The Instagram feed", "slides": null}], "logo": "assets/logos/elvilla_white.png"}, {"slug": "hayat", "name": "Hayat Dental Clinic", "ind": "Dental clinic", "desc": "Fresh green content for a family dental clinic: offers, kids events, branch openings and a loyalty card.", "items": [{"f": "assets/social/hayat/01.webp", "t": "assets/social/hayat/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/02.webp", "t": "assets/social/hayat/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/03.webp", "t": "assets/social/hayat/t/03.webp", "w": 1080, "h": 1080, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/04.webp", "t": "assets/social/hayat/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/05.webp", "t": "assets/social/hayat/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/06.webp", "t": "assets/social/hayat/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/07.webp", "t": "assets/social/hayat/t/07.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/08.webp", "t": "assets/social/hayat/t/08.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/09.webp", "t": "assets/social/hayat/t/09.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/10.webp", "t": "assets/social/hayat/t/10.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/11.webp", "t": "assets/social/hayat/t/11.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/12.webp", "t": "assets/social/hayat/t/12.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/13.webp", "t": "assets/social/hayat/t/13.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/hayat/14.webp", "t": "assets/social/hayat/t/14.webp", "w": 1600, "h": 495, "kind": "print", "cap": "Loyalty card", "slides": null}], "logo": "assets/logos/hayat_white.png"}, {"slug": "nile", "name": "Nile Trade", "ind": "Agri and grain machinery, B2B", "desc": "Educational posts, product highlights and trust-building content for an industrial B2B brand.", "items": [{"f": "assets/social/nile/01.webp", "t": "assets/social/nile/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/02.webp", "t": "assets/social/nile/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/03.webp", "t": "assets/social/nile/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/04.webp", "t": "assets/social/nile/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/05.webp", "t": "assets/social/nile/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/06.webp", "t": "assets/social/nile/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/07.webp", "t": "assets/social/nile/t/07.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/08.webp", "t": "assets/social/nile/t/08.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/09.webp", "t": "assets/social/nile/t/09.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/10.webp", "t": "assets/social/nile/t/10.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/11.webp", "t": "assets/social/nile/t/11.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/12.webp", "t": "assets/social/nile/t/12.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/13.webp", "t": "assets/social/nile/t/13.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/14.webp", "t": "assets/social/nile/t/14.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/nile/15.webp", "t": "assets/social/nile/t/15.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/nile_white.png"}, {"slug": "lorino", "name": "Lorino Medical Wear", "ind": "Medical scrubs", "desc": "A launch feed for a scrubs brand: colours, fit, fabric details and size charts in one calm editorial look.", "items": [{"f": "assets/social/lorino/01.webp", "t": "assets/social/lorino/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/02.webp", "t": "assets/social/lorino/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/03.webp", "t": "assets/social/lorino/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/04.webp", "t": "assets/social/lorino/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/05.webp", "t": "assets/social/lorino/t/05.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/06.webp", "t": "assets/social/lorino/t/06.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/07.webp", "t": "assets/social/lorino/t/07.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/08.webp", "t": "assets/social/lorino/t/08.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/09.webp", "t": "assets/social/lorino/t/09.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/10.webp", "t": "assets/social/lorino/t/10.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/11.webp", "t": "assets/social/lorino/t/11.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/12.webp", "t": "assets/social/lorino/t/12.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/13.webp", "t": "assets/social/lorino/t/13.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/lorino/14.webp", "t": "assets/social/lorino/t/14.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/lorino_white.png"}, {"slug": "alhassan", "name": "Al Hassan Auto", "ind": "Car dealership", "desc": "Car showcase posts and carousels for a dealership, from the Kia Sportage to a full Hyundai Elantra walkaround.", "items": [{"f": "assets/social/alhassan/01.webp", "t": "assets/social/alhassan/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/alhassan/02.webp", "t": "assets/social/alhassan/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/alhassan/03.webp", "t": "assets/social/alhassan/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/alhassan/04.webp", "t": "assets/social/alhassan/t/04.webp", "w": 6480, "h": 1350, "kind": "carousel", "cap": "Hyundai Elantra carousel, 6 slides", "slides": 6}, {"f": "assets/social/alhassan/05.webp", "t": "assets/social/alhassan/t/05.webp", "w": 3240, "h": 1350, "kind": "carousel", "cap": "Showroom carousel, 3 slides", "slides": 3}], "logo": "assets/logos/alhassan_white.png"}, {"slug": "mg", "name": "MG Hotels & Resorts", "ind": "Hotels and resorts", "desc": "Red Sea resort content that sells the feeling first: water, light and the next holiday.", "items": [{"f": "assets/social/mg/01.webp", "t": "assets/social/mg/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/mg/02.webp", "t": "assets/social/mg/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/mg/03.webp", "t": "assets/social/mg/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/mg/04.webp", "t": "assets/social/mg/t/04.webp", "w": 5860, "h": 1350, "kind": "carousel", "cap": "Resort carousel, 5 slides", "slides": 5}], "logo": "assets/logos/mg_white.png"}, {"slug": "n1fit", "name": "n1Fit", "ind": "Sports club", "desc": "Eid and Mother's Day membership offers for a sports club.", "items": [{"f": "assets/social/n1fit/01.webp", "t": "assets/social/n1fit/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/n1fit/02.webp", "t": "assets/social/n1fit/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/n1fit/03.webp", "t": "assets/social/n1fit/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/n1fit/04.webp", "t": "assets/social/n1fit/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/n1fit_white.png"}, {"slug": "etamin", "name": "Etamin", "ar": "اطمن", "ind": "Medical booking platform", "desc": "Logo and launch campaign for a healthcare booking platform, built around one promise: book your doctor in seconds.", "items": [{"f": "assets/social/etamin/01.webp", "t": "assets/social/etamin/t/01.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/etamin/02.webp", "t": "assets/social/etamin/t/02.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/etamin/03.webp", "t": "assets/social/etamin/t/03.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}, {"f": "assets/social/etamin/04.webp", "t": "assets/social/etamin/t/04.webp", "w": 1080, "h": 1350, "kind": "post", "cap": "", "slides": null}], "logo": "assets/logos/etamin_white.png"}]}</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById('data').textContent);
+  const BRANDS = DATA.brands, DECKS = DATA.decks;
+  const RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const ICON = {
+    x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    l: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
+    r: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'
+  };
+  const CHAPTERS = {
+    sravico: [['Cover', 1], ['The Brand', 3], ['Personality', 8], ['Values', 11], ['Positioning', 14], ['The Logo', 17], ['Pattern', 28], ['Colour', 31], ['Typography', 35], ['In Action', 38]],
+    apex: [['Cover', 1], ['The Brand', 3], ['Purpose', 7], ['Personality', 9], ['Values', 13], ['Positioning', 17], ['Logo', 20], ['Pattern', 25], ['Colour', 27], ['Typography', 29], ['In Action', 32]]
+  };
+  const fullOf = src => src.replace('/pages/m/', '/pages/');
+  const lum = hex => { const n = parseInt(hex.slice(1), 16); const c = [n >> 16, n >> 8 & 255, n & 255].map(v => { v /= 255; return v <= .03928 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4; }); return .2126 * c[0] + .7152 * c[1] + .0722 * c[2]; };
+
+  // ---------------------------------------------------------------- scroll lock + focus trap
+  let locks = 0;
+  const lock = () => { if (!locks++) document.body.classList.add('locked'); };
+  const unlock = () => { if (!--locks) document.body.classList.remove('locked'); locks = Math.max(0, locks); };
+  const dialogs = () => [lb, caseEl, dsheet].filter(d => !d.hidden);
+  document.addEventListener('keydown', e => {
+    const top = lb.hidden ? dialogs()[0] : lb;
+    if (!top) return;
+    if (e.key === 'Tab') {
+      const f = [...top.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')].filter(x => !x.hidden && x.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+    }
+    if (e.key === 'Escape') { if (!lb.hidden) closeLB(); else if (!caseEl.hidden) closeCase(); else if (!dsheet.hidden) closeDeck(); }
+  });
+
+  // ---------------------------------------------------------------- cursor
+  if (matchMedia('(pointer:fine)').matches && !RM) {
+    document.body.classList.add('has-cur');
+    const cur = document.getElementById('cur'), ring = document.getElementById('cur-r');
+    let mx = -50, my = -50, rx = -50, ry = -50;
+    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = mx + 'px'; cur.style.top = my + 'px'; });
+    (function loop() { rx += (mx - rx) * .14; ry += (my - ry) * .14; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(loop); })();
+    document.addEventListener('mouseover', e => {
+      const hit = e.target.closest('a,button');
+      cur.style.transform = `translate(-50%,-50%) scale(${hit ? 2.2 : 1})`;
+      ring.style.transform = `translate(-50%,-50%) scale(${hit ? 1.6 : 1})`;
+      ring.style.borderColor = hit ? 'var(--orange)' : 'var(--glow)';
+    });
+  }
+
+  // ---------------------------------------------------------------- lightbox
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap'), lbCount = document.getElementById('lbCount');
+  const lbPrev = lb.querySelector('.lb-prev'), lbNext = lb.querySelector('.lb-next');
+  let lbItems = [], lbIdx = 0, lbOpener = null;
+  function lbShow(i) {
+    lbIdx = (i + lbItems.length) % lbItems.length;
+    const it = lbItems[lbIdx];
+    lbImg.src = it.src; lbImg.alt = it.cap || ''; lbCap.textContent = it.cap || '';
+    lbCount.textContent = lbItems.length > 1 ? `${lbIdx + 1} / ${lbItems.length}` : '';
+    lbPrev.hidden = lbNext.hidden = lbItems.length < 2;
+    [lbIdx - 1, lbIdx + 1].forEach(j => { const n = lbItems[(j + lbItems.length) % lbItems.length]; if (n) new Image().src = n.src; });
+  }
+  function openLB(items, i, from) { lbItems = items; lbOpener = from; lb.hidden = false; lock(); lbShow(i); lb.querySelector('.lb-close').focus(); }
+  function closeLB() { lb.hidden = true; lbImg.removeAttribute('src'); unlock(); if (lbOpener) lbOpener.focus(); }
+  lbPrev.onclick = () => lbShow(lbIdx - 1); lbNext.onclick = () => lbShow(lbIdx + 1);
+  lb.querySelector('.lb-close').onclick = closeLB;
+  lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-fig')) closeLB(); });
+  document.addEventListener('keydown', e => { if (lb.hidden) return; if (e.key === 'ArrowLeft') lbShow(lbIdx - 1); if (e.key === 'ArrowRight') lbShow(lbIdx + 1); });
+  let sx = null;
+  lbImg.addEventListener('pointerdown', e => { sx = e.clientX; });
+  lbImg.addEventListener('pointerup', e => { if (sx === null) return; const d = e.clientX - sx; sx = null; if (Math.abs(d) > 40) lbShow(lbIdx + (d < 0 ? 1 : -1)); });
+  document.addEventListener('click', e => {
+    const z = e.target.closest('.zoom[data-group]');
+    if (!z) return;
+    const root = z.closest('.case, .dsheet') || document;
+    const list = [...root.querySelectorAll(`.zoom[data-group="${z.dataset.group}"]`)].filter(b => b.offsetParent !== null);
+    openLB(list.map(b => ({ src: b.dataset.full, cap: b.dataset.cap, el: b })), Math.max(0, list.indexOf(z)), z);
+  });
+  const shot = (o, group, cls = '', full) => `<figure class="shot ${cls}"><button class="zoom" type="button" data-group="${group}" data-full="${esc(full || o.src)}" data-cap="${esc(o.cap)}" aria-label="View larger${o.cap ? ': ' + esc(o.cap) : ''}"><img src="${esc(o.src)}" width="${o.w}" height="${o.h}" alt="${esc(o.cap)}" loading="lazy" decoding="async"></button>${o.cap ? `<figcaption>${esc(o.cap)}</figcaption>` : ''}</figure>`;
+
+  // ---------------------------------------------------------------- book viewer
+  function Book(root, cfg) {
+    const { dir, pages, label } = cfg, chapters = cfg.chapters || null;
+    const src = (n, s = '') => `${dir}/${s}p${String(n).padStart(2, '0')}.webp`;
+    root.innerHTML = `${chapters ? `<ul class="chapters" aria-label="Chapters">${chapters.map(([l, p]) => `<li><button type="button" class="chap" data-p="${p}">${esc(l)}</button></li>`).join('')}</ul>` : ''}
+      <div class="book-stage"><button type="button" class="book-zoom" aria-label="Open this page full screen"><img src="${src(1)}" width="2400" height="1350" alt=""></button>
+      <button type="button" class="book-nav book-prev" aria-label="Previous page">${ICON.l}</button><button type="button" class="book-nav book-next" aria-label="Next page">${ICON.r}</button></div>
+      <div class="book-bar"><span class="book-chap"></span><span class="book-count" aria-live="polite"></span></div>
+      <ul class="thumbs" aria-label="All pages">${Array.from({ length: pages }, (_, i) => `<li><button type="button" class="thumb" data-p="${i + 1}" aria-label="Page ${i + 1}"><img src="${src(i + 1, 't/')}" width="480" height="270" loading="lazy" alt=""></button></li>`).join('')}</ul>`;
+    const img = root.querySelector('.book-zoom img'), count = root.querySelector('.book-count'), chapEl = root.querySelector('.book-chap');
+    const prev = root.querySelector('.book-prev'), next = root.querySelector('.book-next'), strip = root.querySelector('.thumbs');
+    const thumbs = [...root.querySelectorAll('.thumb')], chaps = [...root.querySelectorAll('.chap')];
+    let page = 1;
+    const chapterOf = n => { if (!chapters) return null; let c = chapters[0]; for (const ch of chapters) if (n >= ch[1]) c = ch; return c; };
+    function go(n, scroll = true) {
+      page = Math.min(pages, Math.max(1, n));
+      img.classList.add('loading');
+      const pre = new Image();
+      pre.onload = () => { img.src = pre.src; img.alt = `${label}, page ${page}`; img.classList.remove('loading'); };
+      pre.src = src(page);
+      count.textContent = `${page} / ${pages}`;
+      const c = chapterOf(page);
+      chapEl.textContent = c ? c[0] : label;
+      chaps.forEach(b => b.setAttribute('aria-current', String(!!c && +b.dataset.p === c[1])));
+      thumbs.forEach(t => t.removeAttribute('aria-current'));
+      const t = thumbs[page - 1]; t.setAttribute('aria-current', 'true');
+      if (scroll) strip.scrollTo({ left: t.parentElement.offsetLeft - strip.clientWidth / 2 + t.clientWidth / 2, behavior: RM ? 'auto' : 'smooth' });
+      prev.disabled = page === 1; next.disabled = page === pages;
+      if (page < pages) new Image().src = src(page + 1);
+    }
+    prev.onclick = () => go(page - 1); next.onclick = () => go(page + 1);
+    thumbs.forEach(t => t.onclick = () => go(+t.dataset.p));
+    chaps.forEach(b => b.onclick = () => go(+b.dataset.p));
+    root.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') { go(page - 1); e.preventDefault(); } if (e.key === 'ArrowRight') { go(page + 1); e.preventDefault(); } });
+    root.querySelector('.book-zoom').onclick = e => openLB(Array.from({ length: pages }, (_, i) => ({ src: src(i + 1), cap: `${label}, page ${i + 1}` })), page - 1, e.currentTarget);
+    let bx = null;
+    img.addEventListener('pointerdown', e => { bx = e.clientX; });
+    img.addEventListener('pointerup', e => { if (bx === null) return; const d = e.clientX - bx; bx = null; if (Math.abs(d) > 40) go(page + (d < 0 ? 1 : -1)); });
+    go(1, false);
+  }
+
+  // handover shelf
+  const hoBook = document.getElementById('hoBook');
+  const shelf = [...document.querySelectorAll('.shelf-book')];
+  function showShelf(i) {
+    const b = BRANDS[i];
+    shelf.forEach(s => s.setAttribute('aria-pressed', String(+s.dataset.book === i)));
+    hoBook.style.setProperty('--bk-acc', b.theme.acc);
+    Book(hoBook, { dir: b.book.dir, pages: b.book.pages, label: `${b.name} ${b.book.label.toLowerCase()}`, chapters: CHAPTERS[b.slug] });
+  }
+  shelf.forEach(s => s.onclick = () => showShelf(+s.dataset.book));
+  if (shelf.length) showShelf(+shelf[0].dataset.book);
+
+  // pack tabs
+  const tabs = [...document.querySelectorAll('.pk-tab')];
+  const selectTab = t => tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; });
+  tabs.forEach((t, i) => {
+    t.onclick = () => selectTab(t);
+    t.onkeydown = e => { let j = null; if (e.key === 'ArrowDown' || e.key === 'ArrowRight') j = (i + 1) % tabs.length; if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length; if (j !== null) { e.preventDefault(); selectTab(tabs[j]); tabs[j].focus(); } };
+  });
+
+  // ---------------------------------------------------------------- brand case
+  const caseEl = document.getElementById('case'), caseScroll = document.getElementById('caseScroll');
+  const cards = [...document.querySelectorAll('.bcard-btn')];
+  let caseIdx = -1;
+  const THEME_KEYS = ['bg', 'ink', 'muted', 'acc', 'surf', 'hero', 'heroInk', 'font'];
+  function caseHTML(i) {
+    const b = BRANDS[i], n = BRANDS.length, nx = BRANDS[(i + 1) % n];
+    const g = `case-${b.slug}`;
+    const meta = [['Industry', b.industry], b.year ? ['Year', b.year] : null, ['Delivered', b.delivered]].filter(Boolean)
+      .map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('');
+    const tag = b.taglineEn ? `<p class="cs-tagline" lang="ar" dir="rtl">${esc(b.tagline)}</p><p class="cs-tagline-en">${esc(b.taglineEn)}</p>` : `<p class="cs-tagline">${esc(b.tagline)}</p>`;
+    const steps = b.process.map(s => `<li class="step">${shot({ ...s.img, cap: '' }, g + '-p', '', fullOf(s.img.src))}<p class="step-t">${esc(s.t)}</p><p class="step-d">${esc(s.d)}</p></li>`).join('');
+    const vers = b.versions.map(v => `<li style="background:${v.bg};color:${lum(v.bg) > .4 ? '#1a1a1a' : '#fff'}"><img src="${esc(v.src)}" alt="${esc(v.label)}" loading="lazy"><span>${esc(v.label)}</span></li>`).join('');
+    const sws = b.colours.map(c => { const dark = lum(c.hex) < .35; return `<li class="sw" style="background:${c.hex};color:${dark ? '#fff' : '#1a1a1a'}"><span class="sw-n">${esc(c.n)}</span><dl><div><dt>HEX</dt><dd>${c.hex}</dd></div>${c.rgb ? `<div><dt>RGB</dt><dd>${c.rgb}</dd></div>` : ''}${c.cmyk ? `<div><dt>CMYK</dt><dd>${c.cmyk}</dd></div>` : ''}</dl></li>`; }).join('');
+    const types = b.type.map(t => `<div class="type">${t.css ? `<p class="type-aa" style="font-family:${t.css}" aria-hidden="true">Aa</p>` : ''}<div><p class="type-n">${esc(t.n)}</p><p class="type-d">${esc(t.d)}</p></div></div>`).join('');
+    const voice = b.voice ? `<div class="idcell"><h4>Tone of voice</h4><div class="voice"><p class="voice-no"><span>Instead of</span><s>${esc(b.voice[0])}</s></p><p class="voice-yes"><span>We say</span>${esc(b.voice[1])}</p></div></div>` : '';
+    const gallery = b.gallery.map(o => shot(o, g + '-g')).join('');
+    return `<header class="cs-bar"><img src="${esc(b.logo.bar)}" alt=""><span class="cs-bar-count">Case ${i + 1} of ${n}</span>
+        <button type="button" class="cs-arrow" data-go="-1" aria-label="Previous case">${ICON.l}</button><button type="button" class="cs-arrow" data-go="1" aria-label="Next case">${ICON.r}</button>
+        <button type="button" class="x-btn cs-close" aria-label="Close case">${ICON.x}</button></header>
+      <section class="cs-hero"><img class="cs-logo case-in" src="${esc(b.logo.hero)}" alt="${esc(b.name)} logo">
+        <h2 class="cs-title case-in" id="caseTitle">${esc(b.name)}${b.ar ? ` <span lang="ar">${esc(b.ar)}</span>` : ''}</h2>
+        <div class="case-in">${tag}</div><dl class="cs-meta case-in">${meta}</dl></section>
+      <div class="cs-body">
+        <div class="cs-cover">${shot(b.cover, g + '-c')}</div>
+        <section class="cs-sec cs-story"><div><h3>The brief</h3><p>${esc(b.brief)}</p></div><div><h3>The idea</h3><p class="cs-idea">${esc(b.idea)}</p></div></section>
+        <section class="cs-sec"><h3 class="cs-h">The process <small>${b.process.length} steps</small></h3><ol class="steps">${steps}</ol></section>
+        <section class="cs-sec"><h3 class="cs-h">The identity</h3><div class="idgrid">
+          <div class="idcell"><h4>Logo versions</h4><ul class="vers">${vers}</ul></div>
+          <div class="idcell"><h4>Colour palette</h4><ul class="sws">${sws}</ul></div>
+          ${types ? `<div class="idcell"><h4>Typography</h4><div class="types">${types}</div></div>` : ''}${voice}</div></section>
+        ${b.book ? `<section class="cs-sec cs-book"><h3 class="cs-h">The file the client received <small>${b.book.label}, ${b.book.pages} pages</small></h3><div class="book" data-book></div></section>` : ''}
+        <section class="cs-sec"><h3 class="cs-h">The brand in action</h3><div class="gal${b.gallery.length <= 5 ? ' few' : ''}">${gallery}</div></section>
+        <div class="cs-next"><button type="button" data-go="1">Next case: <b>${esc(nx.name)}</b><img src="${esc(nx.logo.bar)}" alt=""><i>${ICON.r}</i></button></div>
+      </div>`;
+  }
+  function renderCase(i) {
+    caseIdx = (i + BRANDS.length) % BRANDS.length;
+    const b = BRANDS[caseIdx];
+    THEME_KEYS.forEach(k => caseEl.style.setProperty('--c-' + k, b.theme[k]));
+    caseScroll.innerHTML = caseHTML(caseIdx);
+    caseScroll.scrollTop = 0;
+    const bk = caseScroll.querySelector('[data-book]');
+    if (bk) Book(bk, { dir: b.book.dir, pages: b.book.pages, label: `${b.name} ${b.book.label.toLowerCase()}`, chapters: CHAPTERS[b.slug] });
+    caseScroll.querySelectorAll('[data-go]').forEach(btn => btn.onclick = () => switchCase(caseIdx + +btn.dataset.go));
+    caseScroll.querySelector('.cs-close').onclick = closeCase;
+  }
+  const rectClip = r => `inset(${Math.max(0, r.top)}px ${Math.max(0, innerWidth - r.right)}px ${Math.max(0, innerHeight - r.bottom)}px ${Math.max(0, r.left)}px round 18px)`;
+  function openCase(i, from) {
+    renderCase(i); caseEl.hidden = false; lock();
+    if (!RM && from) caseEl.animate([{ clipPath: rectClip(from.getBoundingClientRect()) }, { clipPath: 'inset(0px 0px 0px 0px round 0px)' }], { duration: 720, easing: 'cubic-bezier(.77,0,.18,1)' });
+    caseScroll.querySelector('.cs-close').focus({ preventScroll: true });
+  }
+  function switchCase(i) {
+    if (RM) { renderCase(i); return; }
+    caseScroll.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(-14px)' }], { duration: 180, easing: 'ease-in' }).onfinish = () => {
+      renderCase(i); caseScroll.querySelector('.cs-close').focus({ preventScroll: true });
+      caseScroll.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, easing: 'ease-out' });
+    };
+  }
+  function closeCase() {
+    const card = cards[caseIdx];
+    const done = () => { caseEl.hidden = true; caseScroll.innerHTML = ''; unlock(); card && card.focus({ preventScroll: true }); };
+    if (RM || !card) return done();
+    const r = card.getBoundingClientRect();
+    caseEl.animate([{ clipPath: 'inset(0px 0px 0px 0px round 0px)' }, { clipPath: rectClip(r) }], { duration: 560, easing: 'cubic-bezier(.77,0,.18,1)' }).onfinish = done;
+  }
+  cards.forEach(c => c.onclick = () => openCase(+c.dataset.case, c));
+
+  // ---------------------------------------------------------------- social decks
+  const dsheet = document.getElementById('dsheet'), dsScroll = document.getElementById('dsScroll');
+  const deckBtns = [...document.querySelectorAll('.deck-btn')];
+  let deckIdx = -1;
+  function deckHTML(i) {
+    const d = DECKS[i], n = DECKS.length, g = `deck-${d.slug}`;
+    const regular = d.items.filter(p => p.kind !== 'carousel'), car = d.items.filter(p => p.kind === 'carousel');
+    const it = p => shot({ src: p.t, w: p.w, h: p.h, cap: p.cap }, g, 'post' + (p.kind === 'screen' ? ' screen' : '') + (p.kind === 'print' ? ' span2' : ''), p.f);
+    return `<header class="ds-head"><img src="${esc(d.logo)}" alt=""><div><h2 class="ds-title" id="deckTitle">${esc(d.name)}${d.ar ? ` <span lang="ar">${esc(d.ar)}</span>` : ''}</h2><p class="ds-sub">${esc(d.ind)}, ${d.items.length} designs</p></div>
+        <div class="ds-nav"><button type="button" class="x-btn" data-dgo="-1" aria-label="Previous brand">${ICON.l}</button><button type="button" class="x-btn" data-dgo="1" aria-label="Next brand">${ICON.r}</button></div>
+        <button type="button" class="x-btn ds-close" aria-label="Close">${ICON.x}</button></header>
+      <div class="ds-body"><p class="ds-desc">${esc(d.desc)}</p>
+        <div class="pgrid">${regular.map(it).join('')}${car.length ? `<p class="ds-sec-t">Carousels</p>${car.map(p => shot({ src: p.t, w: p.w, h: p.h, cap: p.cap }, g, 'post wide', p.f)).join('')}` : ''}</div></div>`;
+  }
+  function deal(srcRect) {
+    const posts = [...dsScroll.querySelectorAll('.post')];
+    const sxc = srcRect.left + srcRect.width / 2, syc = srcRect.top + srcRect.height / 2;
+    posts.forEach((c, i) => {
+      const r = c.getBoundingClientRect();
+      if (r.top > innerHeight * 1.1) { c.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, delay: 500, fill: 'backwards' }); return; }
+      const s = Math.min(1, (srcRect.width * .62) / r.width);
+      const dx = sxc - (r.left + r.width / 2), dy = syc - (r.top + r.height / 2);
+      const rot = (i % 2 ? 1 : -1) * (5 + (i * 37) % 9);
+      c.animate([{ transform: `translate(${dx}px,${dy}px) scale(${s}) rotate(${rot}deg)`, opacity: 0 }, { opacity: 1, offset: .12 }, { transform: 'none', opacity: 1 }],
+        { duration: 760, delay: 80 + i * 55, easing: 'cubic-bezier(.2,.85,.25,1)', fill: 'backwards' });
+    });
+  }
+  function renderDeck(i) {
+    deckIdx = (i + DECKS.length) % DECKS.length;
+    dsScroll.innerHTML = deckHTML(deckIdx); dsScroll.scrollTop = 0;
+    dsScroll.querySelector('.ds-close').onclick = closeDeck;
+    dsScroll.querySelectorAll('[data-dgo]').forEach(b => b.onclick = () => {
+      renderDeck(deckIdx + +b.dataset.dgo);
+      if (!RM) { const h = dsScroll.querySelector('.ds-head').getBoundingClientRect(); deal({ left: innerWidth / 2 - 60, top: h.bottom + 40, width: 120, height: 150 }); }
+      dsScroll.querySelector(`[data-dgo="${b.dataset.dgo}"]`).focus();
+    });
+  }
+  function openDeck(i, from) {
+    renderDeck(i); dsheet.hidden = false; lock();
+    if (!RM) {
+      dsheet.animate([{ backgroundColor: 'rgba(7,0,12,0)' }, { backgroundColor: 'rgba(7,0,12,1)' }], { duration: 380, easing: 'ease-out' });
+      dsScroll.querySelector('.ds-head').animate([{ opacity: 0, transform: 'translateY(-16px)' }, { opacity: 1, transform: 'none' }], { duration: 450, delay: 120, easing: 'ease-out', fill: 'backwards' });
+      dsScroll.querySelector('.ds-desc').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, delay: 220, fill: 'backwards' });
+      deal(from.querySelector('.dk-stack').getBoundingClientRect());
+    }
+    dsScroll.querySelector('.ds-close').focus({ preventScroll: true });
+  }
+  function closeDeck() {
+    const btn = deckBtns[deckIdx];
+    const done = () => { dsheet.getAnimations().forEach(a => a.cancel()); dsheet.hidden = true; dsScroll.innerHTML = ''; unlock(); btn && btn.focus({ preventScroll: true }); };
+    if (RM || !btn) return done();
+    const src = btn.querySelector('.dk-stack').getBoundingClientRect();
+    const sxc = src.left + src.width / 2, syc = src.top + src.height / 2;
+    const vis = [...dsScroll.querySelectorAll('.post')].filter(c => { const r = c.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; });
+    vis.forEach((c, k) => { const r = c.getBoundingClientRect(); const s = Math.min(1, (src.width * .62) / r.width);
+      c.animate([{ transform: 'none', opacity: 1 }, { transform: `translate(${sxc - (r.left + r.width / 2)}px,${syc - (r.top + r.height / 2)}px) scale(${s}) rotate(${k % 2 ? 6 : -6}deg)`, opacity: 0 }],
+        { duration: 420, delay: (vis.length - k) * 18, easing: 'cubic-bezier(.6,0,.8,.4)', fill: 'forwards' }); });
+    dsheet.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 300, delay: 260 + vis.length * 18, fill: 'forwards' }).onfinish = done;
+  }
+  deckBtns.forEach(b => b.onclick = () => openDeck(+b.dataset.deck, b));
+})();
+
+</script>
+</body>
+</html>
